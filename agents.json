@@ -1016,8 +1016,8 @@
         }
       ],
       "source_path": "agents/release_operations/re/release-manager",
-      "updated_at": "2026-10-12 12:47:27",
-      "version": "1.0.5"
+      "updated_at": "2026-10-12 15:02:44",
+      "version": "1.0.6"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
@@ -1245,6 +1245,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 15:02:42",
+  "updated_at": "2026-10-12 15:02:56",
   "version": "2.0.0"
 }
