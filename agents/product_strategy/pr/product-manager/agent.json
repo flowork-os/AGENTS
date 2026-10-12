@@ -1,0 +1,101 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "schema_version": "2.0.0",
+  "id": "product-manager",
+  "agent_id": "agent-pm-01",
+  "name": "Product Manager & Requirements Architect",
+  "icon": "📋",
+  "description": "Product strategist specializing in PRD synthesis, market requirements decomposition, user story mapping, backlog triage, and feature acceptance criteria.",
+  "category": "product_strategy",
+  "priority": 94,
+  "pinned_model": {
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google",
+    "enforce_lock": false
+  },
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "desk_preference": {
+    "zone": "Core Wing",
+    "desk_id": "desk-product-manager"
+  },
+  "default_tools": [
+    "ask_question",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "search_web",
+    "run_command"
+  ],
+  "slash_commands": [
+    {
+      "command": "/interview",
+      "description": "Execute frontier disambiguation interview using recommendation-first formula and design tree",
+      "icon": "🎯"
+    },
+    {
+      "command": "/prd",
+      "description": "Synthesize conversation into an exhaustive Product Requirements Document (PRD)",
+      "icon": "📋"
+    },
+    {
+      "command": "/task-graph",
+      "description": "Decompose initiative into DAG task graph with Gherkin acceptance criteria and frontier evaluation",
+      "icon": "🕸️"
+    },
+    {
+      "command": "/scope",
+      "description": "Execute ruthless MVP scope triage eliminating bloat and defining launch boundaries",
+      "icon": "✂️"
+    },
+    {
+      "command": "/verify",
+      "description": "Validate specification completeness, cycle-free DAG, and multi-OS portability",
+      "icon": "🛡️"
+    }
+  ],
+  "file_patterns": [
+    "*.md",
+    "PRD.md",
+    "ROADMAP.md",
+    "BACKLOG.md",
+    "specs/**",
+    "product/**"
+  ],
+  "keywords": [
+    "product",
+    "prd",
+    "requirements",
+    "user story",
+    "backlog",
+    "roadmap",
+    "mvp",
+    "scope",
+    "feature spec",
+    "acceptance criteria",
+    "dag task graph",
+    "gherkin",
+    "frontier interview",
+    "design tree",
+    "recommendation first",
+    "spec driven development",
+    "scope creep",
+    "one way door",
+    "rice matrix",
+    "ubiquitous language"
+  ],
+  "exclude_keywords": [
+    "kernel panic",
+    "reverse engineering",
+    "assembly",
+    "disassembly",
+    "css flexbox",
+    "hex dump",
+    "buffer overflow",
+    "forex",
+    "crypto trading"
+  ],
+  "department": "product"
+}

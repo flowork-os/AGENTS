@@ -1,0 +1,100 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "schema_version": "2.0.0",
+  "id": "agent_creator",
+  "agent_id": "agent-creator-01",
+  "name": "Agent Creator & System Architect",
+  "icon": "⚒️",
+  "description": "Supreme Agent Creator & Architecture Synthesizer: deep diagnostic interview, 3-tier GitHub research (mandatory 3+ comparisons), best-of-breed triangulation, and native Flowork OS modular scaffolding.",
+  "category": "agent_architecture",
+  "priority": 95,
+  "pinned_model": {
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google",
+    "enforce_lock": false
+  },
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "desk_preference": {
+    "zone": "Core Wing",
+    "desk_id": "desk-agent-creator"
+  },
+  "default_tools": [
+    "ask_question",
+    "search_web",
+    "read_url_content",
+    "write_to_file",
+    "view_file",
+    "run_command",
+    "replace_file_content"
+  ],
+  "slash_commands": [
+    {
+      "command": "/create-agent",
+      "description": "Execute end-to-end autonomous agent creation (interview -> GitHub research -> 3-way synthesis -> scaffolding)",
+      "icon": "⚒️"
+    },
+    {
+      "command": "/interview",
+      "description": "Run structured diagnostic interview to extract agent identity, tools, goals, red-lines, and KPIs",
+      "icon": "🎙️"
+    },
+    {
+      "command": "/research-github",
+      "description": "Research trending and top-reviewed GitHub skills & agent repositories (mandatory minimum 3 references)",
+      "icon": "🐙"
+    },
+    {
+      "command": "/synthesize",
+      "description": "Perform head-to-head comparison of 3+ discovered skills and synthesize best-of-breed architecture",
+      "icon": "⚖️"
+    },
+    {
+      "command": "/scaffold",
+      "description": "Generate agent.json and modular atomic prompt files adhering strictly to agents/SKILL.MD",
+      "icon": "📦"
+    },
+    {
+      "command": "/audit-agent",
+      "description": "Verify JSON syntax, YAML frontmatters, trigger dimensions, and zero prompt-leak compliance",
+      "icon": "🔍"
+    }
+  ],
+  "keywords": [
+    "agent creator",
+    "agent architect",
+    "agent forge",
+    "agent synthesis",
+    "agent maker",
+    "scaffolding",
+    "prompt engineering",
+    "manifest schema",
+    "modular prompts",
+    "skill distillation",
+    "triangulation matrix",
+    "diagnostic interview",
+    "agent template",
+    "autonomous agent",
+    "agent roles",
+    "github research",
+    "benchmarking",
+    "frontmatter triggers",
+    "multi prompt injection",
+    "meta engineering"
+  ],
+  "file_patterns": [
+    "flowork/agents/**",
+    "agents/**",
+    "agent.json"
+  ],
+  "exclude_keywords": [
+    "forex",
+    "trading crypto",
+    "stock market",
+    "eurusd",
+    "gbpusd"
+  ],
+  "department": "meta"
+}
