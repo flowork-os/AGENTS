@@ -1,26 +1,7 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
-  "schema_version": "2.0.0",
-  "id": "agent_creator",
   "agent_id": "agent-creator-01",
-  "name": "Agent Creator & System Architect",
-  "icon": "⚒️",
-  "description": "Supreme Agent Creator & Architecture Synthesizer: deep diagnostic interview, 3-tier GitHub research (mandatory 3+ comparisons), best-of-breed triangulation, and native Flowork OS modular scaffolding.",
   "category": "agent_architecture",
-  "priority": 95,
-  "pinned_model": {
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "enforce_lock": false
-  },
-  "pinned_account": {
-    "account_id": "combo",
-    "pool_strategy": "combo"
-  },
-  "desk_preference": {
-    "zone": "Core Wing",
-    "desk_id": "desk-agent-creator"
-  },
   "default_tools": [
     "ask_question",
     "search_web",
@@ -30,6 +11,61 @@
     "run_command",
     "replace_file_content"
   ],
+  "department": "meta",
+  "description": "Supreme Agent Creator & Architecture Synthesizer: deep diagnostic interview, 3-tier GitHub research (mandatory 3+ comparisons), best-of-breed triangulation, and native Flowork OS modular scaffolding.",
+  "desk_preference": {
+    "desk_id": "desk-agent-creator",
+    "zone": "Core Wing"
+  },
+  "exclude_keywords": [
+    "forex",
+    "trading crypto",
+    "stock market",
+    "eurusd",
+    "gbpusd"
+  ],
+  "file_patterns": [
+    "flowork/agents/**",
+    "agents/**",
+    "agent.json"
+  ],
+  "icon": "⚒️",
+  "id": "agent_creator",
+  "keywords": [
+    "agent creator",
+    "agent architect",
+    "agent forge",
+    "agent synthesis",
+    "agent maker",
+    "scaffolding",
+    "prompt engineering",
+    "manifest schema",
+    "modular prompts",
+    "skill distillation",
+    "triangulation matrix",
+    "diagnostic interview",
+    "agent template",
+    "autonomous agent",
+    "agent roles",
+    "github research",
+    "benchmarking",
+    "frontmatter triggers",
+    "multi prompt injection",
+    "meta engineering"
+  ],
+  "name": "Agent Creator & System Architect",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google"
+  },
+  "priority": 95,
+  "schema_version": "2.0.0",
   "slash_commands": [
     {
       "command": "/create-agent",
@@ -62,39 +98,6 @@
       "icon": "🔍"
     }
   ],
-  "keywords": [
-    "agent creator",
-    "agent architect",
-    "agent forge",
-    "agent synthesis",
-    "agent maker",
-    "scaffolding",
-    "prompt engineering",
-    "manifest schema",
-    "modular prompts",
-    "skill distillation",
-    "triangulation matrix",
-    "diagnostic interview",
-    "agent template",
-    "autonomous agent",
-    "agent roles",
-    "github research",
-    "benchmarking",
-    "frontmatter triggers",
-    "multi prompt injection",
-    "meta engineering"
-  ],
-  "file_patterns": [
-    "flowork/agents/**",
-    "agents/**",
-    "agent.json"
-  ],
-  "exclude_keywords": [
-    "forex",
-    "trading crypto",
-    "stock market",
-    "eurusd",
-    "gbpusd"
-  ],
-  "department": "meta"
+  "updated_at": "2026-10-12 10:12:18",
+  "version": "1.0.1"
 }
