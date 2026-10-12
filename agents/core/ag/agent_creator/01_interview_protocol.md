@@ -26,22 +26,38 @@ trigger:
 When a user requests a new agent, you must systematically extract the 7 vital pillars:
 
 1. **Official Professional Category (MECE Doctrine):**
-   - Which of the 15 Official Flowork OS Professional Categories does this agent belong to?
-     * `CAT-001: healthcare` (Physical health, clinical medicine, pharmacy, nutrition)
-     * `CAT-002: psychology` (Mental wellness, CBT psychotherapy, stress counseling)
-     * `CAT-003: legal` (Law, commercial contracts, regulatory compliance, IP patents)
-     * `CAT-004: education` (Teaching, academic tutoring, language instruction, curriculum)
-     * `CAT-005: technology` (Software engineering, coding, QA testing, DevOps, infosec)
-     * `CAT-006: finance` (Accounting, tax audits, trading, crypto on-chain whale tracking)
-     * `CAT-007: business` (Business strategy, PRD product management, market positioning)
-     * `CAT-008: marketing` (Organic SEO, keyword research, content marketing, email funnels)
-     * `CAT-009: advertising` (Paid PPC ads: Meta, Google, TikTok Ads, media buying, ROAS)
-     * `CAT-010: media_creative` (Audio, video, YouTube intelligence, podcasting, voiceover)
-     * `CAT-011: design` (Static visual art, Canvas UI/UX wireframing, styling, branding)
-     * `CAT-012: human_resources` (Recruitment, talent sourcing, interview evaluation, career)
-     * `CAT-013: science_research` (Pure science, academic paper synthesis, data modeling)
-     * `CAT-014: automation_admin` (Task automation, web scraping, administrative VA bots)
-     * `CAT-015: core` (Core system engine, task delegator, agent architect)
+   - Which of the 25 Official Flowork OS Professional Categories does this agent belong to?
+     * **Cluster I: Medical, Behavioral & Governance:**
+       - `CAT-001: healthcare` (Physical health, clinical medicine, pharmacy, nutrition)
+       - `CAT-002: psychology` (Mental wellness, CBT psychotherapy, stress counseling)
+       - `CAT-003: legal` (Law, commercial contracts, regulatory compliance, IP patents)
+       - `CAT-004: education` (Teaching, academic tutoring, language instruction, curriculum)
+       - `CAT-012: human_resources` (Recruitment, talent sourcing, interview evaluation, career)
+     * **Cluster II: Engineering, Security & Automation:**
+       - `CAT-005: technology` (Software engineering, coding, DevOps, backend/frontend)
+       - `CAT-013: science_research` (Pure science, academic paper synthesis, data modeling)
+       - `CAT-014: automation_admin` (Task automation, web scraping, administrative VA bots)
+       - `CAT-023: cybersecurity_forensics` (Penetration testing, digital forensics, CVE analysis)
+     * **Cluster III: Commerce, Capital & Growth:**
+       - `CAT-006: finance` (Accounting, tax audits, trading, crypto on-chain tracking)
+       - `CAT-007: business` (Business strategy, PRD product management, market positioning)
+       - `CAT-008: marketing` (Organic SEO, keyword research, content marketing, funnels)
+       - `CAT-009: advertising` (Paid PPC ads: Meta, Google, TikTok Ads, media buying, ROAS)
+     * **Cluster IV: Arts, Design & Culture:**
+       - `CAT-010: media_creative` (Audio, video, YouTube intelligence, podcasting, editorial)
+       - `CAT-011: design` (Static visual art, UI/UX wireframing, styling, branding)
+       - `CAT-016: arts_music_poetry` (Poetry, songwriting, lyrical prosody, composition, fine arts)
+       - `CAT-017: metaphysics_fengshui` (Feng shui geomancy, BaZi, cosmic spatial harmony, I Ching)
+     * **Cluster V: Spatial, Gastronomy, Life & Earth Sciences:**
+       - `CAT-018: architecture_spatial` (Architectural design, urban zoning, BIM, structural blueprints)
+       - `CAT-019: culinary_gastronomy` (Recipe science, culinary techniques, food cost, HACCP)
+       - `CAT-020: sports_athletics` (Athletic training, biomechanics, VO2 max, sports conditioning)
+       - `CAT-021: agriculture_ecology` (Agroecology, soil science, crop management, permaculture)
+     * **Cluster VI: Global Governance, Mobility & Core Operations:**
+       - `CAT-015: core` (Core system engine, task delegator, agent architect)
+       - `CAT-022: diplomacy_negotiation` (International diplomacy, treaty drafting, conflict mediation)
+       - `CAT-024: hospitality_tourism` (Hotel guest experience, tourism operations, concierge standards)
+       - `CAT-025: maritime_logistics` (Maritime shipping, port cargo operations, Incoterms, supply chain)
    - Apply Boundary Resolution: Subject Matter Primacy, Paid vs Organic, Time-Based vs Static.
 
 2. **Identity & Persona Archetype:**
