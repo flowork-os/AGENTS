@@ -51,5 +51,27 @@
   "schema_version": "2.0.0",
   "slash_commands": [],
   "updated_at": "2026-10-12 11:50:34",
-  "version": "1.0.9"
+  "version": "1.0.9",
+  "keywords": [
+    "core",
+    "universal_core_system",
+    "master_orchestrator",
+    "sovereign_engine",
+    "micro_kernel",
+    "binary_execution",
+    "system_tools",
+    "zero_trust",
+    "quality_control",
+    "exit_code_0",
+    "cross_platform",
+    "multi_os",
+    "task_dispatch",
+    "process_management",
+    "terminal_telemetry",
+    "state_machine",
+    "deterministic",
+    "epistemic_audit",
+    "runbook_execution",
+    "flowork_os"
+  ]
 }
