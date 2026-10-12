@@ -1,116 +1,27 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
-  "schema_version": "2.0.0",
-  "id": "devops-engineer",
   "agent_id": "agent-devops-01",
-  "name": "DevOps & Cloud Infrastructure Architect",
-  "role": "Sovereign DevOps & Cloud Infrastructure Architect",
-  "icon": "☁️",
   "category": "devops_infrastructure",
-  "priority": 92,
+  "department": "engineering",
   "description": "Infrastructure engineer specialized in CI/CD pipelines, Docker containerization, Kubernetes orchestration, system health monitoring, and zero-downtime deployments.",
-  "pinned_model": {
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "temperature": 0.2,
-    "enforce_lock": true,
-    "fallback_model_id": "claude-sonnet-4-6"
-  },
-  "pinned_account": {
-    "account_id": "acc-devops-corp-01",
-    "email": "devops@floworkos.com",
-    "pool_strategy": "pinned",
-    "required_tier": "pro",
-    "isolated_profile": true
-  },
   "desk_preference": {
-    "zone": "DevOps & Cloud Deck",
-    "desk_id": "desk-devops-engineer",
+    "active_animation": "deploying_pipeline",
+    "avatar_mesh": "procedural_devops_architect",
     "coordinates": {
       "x": 16.0,
       "y": 0.0,
       "z": -8.5
     },
-    "rotation_y": 90.0,
-    "avatar_mesh": "procedural_devops_architect",
+    "desk_id": "desk-devops-engineer",
     "desk_props": [
       "terminal_dashboard",
       "status_led_tower",
       "cloud_monitor"
     ],
     "idle_animation": "monitoring_cluster",
-    "active_animation": "deploying_pipeline"
+    "rotation_y": 90.0,
+    "zone": "DevOps & Cloud Deck"
   },
-  "tools": [
-    "run_command",
-    "view_file",
-    "write_to_file",
-    "replace_file_content",
-    "ask_question"
-  ],
-  "forbidden_tools": [
-    "format_disk",
-    "bypass_vault"
-  ],
-  "slash_commands": [
-    {
-      "command": "/dockerize",
-      "description": "Create ultra-lightweight, multi-stage, rootless Dockerfile and docker-compose configurations",
-      "icon": "🐳"
-    },
-    {
-      "command": "/ci-cd",
-      "description": "Generate or optimize automated GitHub Actions, GitLab CI, or Jenkins pipelines",
-      "icon": "🚀"
-    },
-    {
-      "command": "/healthcheck",
-      "description": "Inspect system daemon status, open network ports, CPU/RAM resource limits, and service health",
-      "icon": "🩺"
-    },
-    {
-      "command": "/k8s",
-      "description": "Generate declarative Kubernetes manifests with pod health probes, secrets, and horizontal autoscaling",
-      "icon": "☸️"
-    },
-    {
-      "command": "/terraform",
-      "description": "Synthesize reproducible Infrastructure-as-Code (IaC) templates for cloud infrastructure",
-      "icon": "🏗️"
-    }
-  ],
-  "file_patterns": [
-    "Dockerfile*",
-    "docker-compose*.yml",
-    ".github/workflows/**",
-    "*.tf",
-    "k8s/**",
-    "helm/**",
-    "nginx.conf",
-    "systemd/**"
-  ],
-  "keywords": [
-    "docker",
-    "kubernetes",
-    "k8s",
-    "container",
-    "ci/cd",
-    "pipeline",
-    "infrastructure",
-    "terraform",
-    "helm",
-    "systemd",
-    "healthcheck",
-    "nginx",
-    "deploy",
-    "devops",
-    "iac",
-    "ansible",
-    "observability",
-    "cluster",
-    "daemon",
-    "cloud"
-  ],
   "exclude_keywords": [
     "frontend styling",
     "tailwind class",
@@ -138,5 +49,97 @@
     "binance",
     "metatrader"
   ],
-  "department": "engineering"
+  "file_patterns": [
+    "Dockerfile*",
+    "docker-compose*.yml",
+    ".github/workflows/**",
+    "*.tf",
+    "k8s/**",
+    "helm/**",
+    "nginx.conf",
+    "systemd/**"
+  ],
+  "forbidden_tools": [
+    "format_disk",
+    "bypass_vault"
+  ],
+  "icon": "☁️",
+  "id": "devops-engineer",
+  "keywords": [
+    "docker",
+    "kubernetes",
+    "k8s",
+    "container",
+    "ci/cd",
+    "pipeline",
+    "infrastructure",
+    "terraform",
+    "helm",
+    "systemd",
+    "healthcheck",
+    "nginx",
+    "deploy",
+    "devops",
+    "iac",
+    "ansible",
+    "observability",
+    "cluster",
+    "daemon",
+    "cloud"
+  ],
+  "name": "DevOps & Cloud Infrastructure Architect",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "acc-devops-corp-01",
+    "email": "devops@floworkos.com",
+    "isolated_profile": true,
+    "pool_strategy": "pinned",
+    "required_tier": "pro"
+  },
+  "pinned_model": {
+    "enforce_lock": true,
+    "fallback_model_id": "claude-sonnet-4-6",
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google",
+    "temperature": 0.2
+  },
+  "priority": 92,
+  "role": "Sovereign DevOps & Cloud Infrastructure Architect",
+  "schema_version": "2.0.0",
+  "slash_commands": [
+    {
+      "command": "/dockerize",
+      "description": "Create ultra-lightweight, multi-stage, rootless Dockerfile and docker-compose configurations",
+      "icon": "🐳"
+    },
+    {
+      "command": "/ci-cd",
+      "description": "Generate or optimize automated GitHub Actions, GitLab CI, or Jenkins pipelines",
+      "icon": "🚀"
+    },
+    {
+      "command": "/healthcheck",
+      "description": "Inspect system daemon status, open network ports, CPU/RAM resource limits, and service health",
+      "icon": "🩺"
+    },
+    {
+      "command": "/k8s",
+      "description": "Generate declarative Kubernetes manifests with pod health probes, secrets, and horizontal autoscaling",
+      "icon": "☸️"
+    },
+    {
+      "command": "/terraform",
+      "description": "Synthesize reproducible Infrastructure-as-Code (IaC) templates for cloud infrastructure",
+      "icon": "🏗️"
+    }
+  ],
+  "tools": [
+    "run_command",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "ask_question"
+  ],
+  "updated_at": "2026-10-12 10:10:31",
+  "version": "1.0.1"
 }
