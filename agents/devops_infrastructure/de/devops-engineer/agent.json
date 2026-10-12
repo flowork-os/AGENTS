@@ -2,6 +2,7 @@
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
   "agent_id": "agent-devops-01",
   "category": "devops_infrastructure",
+  "category_id": "CAT-005",
   "department": "engineering",
   "description": "Infrastructure engineer specialized in CI/CD pipelines, Docker containerization, Kubernetes orchestration, system health monitoring, and zero-downtime deployments.",
   "desk_preference": {
@@ -140,7 +141,6 @@
     "replace_file_content",
     "ask_question"
   ],
-  "updated_at": "2026-10-12 11:51:15",
-  "version": "1.0.4",
-  "category_id": "CAT-005"
+  "updated_at": "2026-10-12 12:46:07",
+  "version": "1.0.5"
 }
