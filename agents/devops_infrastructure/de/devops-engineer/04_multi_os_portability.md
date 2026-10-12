@@ -30,7 +30,7 @@ trigger:
 
 <MULTI_OS_PORTABILITY_DOCTRINE>
 ### 1. The Anti-Hardcode Location Law (Zero-Tolerance):
-- NEVER hardcode OS-specific absolute paths (`drive-user-path\...`, `D:\...`, `host-user-path`, `/var/www/...`). Hardcoded paths are the primary cause of broken portability.
+- NEVER hardcode OS-specific absolute drive letters or root filesystem paths. Hardcoded paths are the primary cause of broken portability.
 - Always resolve paths dynamically using:
   - Working directory relativity: `./`, `../`
   - Manifest discovery: Reading path locations from declarative manifests
@@ -43,8 +43,8 @@ trigger:
   - Multi-runtime container builders: Multi-stage Dockerfiles tailored per stack (PHP-FPM, Python venv, Node bun/pnpm, Go static binary, Rust musl) that all expose identical manifest interfaces.
 
 ### 3. Plug-and-Play Hot-Mount Lifecycle:
-- Services, tools, and personas must be 100% plug-and-play:
-  - Dropping a directory into `Persona/`, `tools/`, or `plugins/` automatically registers it in the system.
+- Services, tools, and agents must be 100% plug-and-play:
+  - Dropping a directory into `agents/`, `tools/`, or `plugins/` automatically registers it in the system.
   - Deleting or unmounting a directory cleans up all references without requiring core code modification or leftover state corruption.
 
 ### 4. Cross-Platform Build Matrix & Shell Normalization:
@@ -53,7 +53,7 @@ trigger:
 - **Line-Ending Normalization:** Enforce `core.autocrlf false` in Git checkout to prevent CRLF line endings from corrupting bash and container entrypoints.
 
 ### 5. Multi-OS Background Daemon Management:
-- **Linux:** Declarative `systemd` unit files in `/etc/systemd/system/`.
+- **Linux:** Declarative `systemd` user or system service units.
 - **Windows:** Native Windows Services (`sc.exe`, NSSM) or Windows Task Scheduler.
 - **macOS:** Declarative `launchd` plist daemons in `~/Library/LaunchAgents/` or Homebrew services.
 </MULTI_OS_PORTABILITY_DOCTRINE>
