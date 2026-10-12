@@ -1,8 +1,8 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
   "agent_id": "agent-mrflow-core-01",
-  "category_id": "CAT-015",
   "category": "universal_core_system",
+  "category_id": "CAT-015",
   "default_tools": [
     "run_command",
     "view_file",
@@ -50,6 +50,6 @@
   "role": "Sovereign Core System Engine & Master Orchestrator",
   "schema_version": "2.0.0",
   "slash_commands": [],
-  "updated_at": "2026-10-12 11:09:30",
-  "version": "1.0.6"
+  "updated_at": "2026-10-12 11:38:34",
+  "version": "1.0.8"
 }
