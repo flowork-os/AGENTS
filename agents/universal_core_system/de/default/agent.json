@@ -1,43 +1,7 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
-  "schema_version": "2.0.0",
-  "id": "default",
   "agent_id": "agent-mrflow-core-01",
-  "name": "Mr. Flow (Core Sovereign Engine)",
-  "role": "Sovereign Core System Engine & Master Orchestrator",
-  "icon": "⭐",
   "category": "universal_core_system",
-  "priority": 100,
-  "description": "Universal Core Sovereign Intelligence & Micro-Kernel of Flowork OS: pure binary execution, sovereign tools, and system orchestration.",
-  "pinned_model": {
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "temperature": 0.3,
-    "enforce_lock": false,
-    "fallback_model_id": "gemini-2.5-pro"
-  },
-  "pinned_account": {
-    "account_id": "combo",
-    "pool_strategy": "combo",
-    "required_tier": "free",
-    "isolated_profile": false
-  },
-  "desk_preference": {
-    "zone": "Command Center",
-    "desk_id": "desk-mrflow-core",
-    "coordinates": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
-    "rotation_y": 0.0,
-    "avatar_mesh": "procedural_core_orchestrator",
-    "desk_props": [
-      "holographic_core_globe",
-      "status_beacons",
-      "master_terminal"
-    ]
-  },
   "default_tools": [
     "run_command",
     "view_file",
@@ -47,5 +11,44 @@
     "search_web",
     "read_url_content"
   ],
-  "slash_commands": []
+  "description": "Universal Core Sovereign Intelligence & Micro-Kernel of Flowork OS: pure binary execution, sovereign tools, and system orchestration.",
+  "desk_preference": {
+    "avatar_mesh": "procedural_core_orchestrator",
+    "coordinates": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "desk_id": "desk-mrflow-core",
+    "desk_props": [
+      "holographic_core_globe",
+      "status_beacons",
+      "master_terminal"
+    ],
+    "rotation_y": 0.0,
+    "zone": "Command Center"
+  },
+  "icon": "⭐",
+  "id": "default",
+  "name": "Mr. Flow (Core Sovereign Engine)",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "isolated_profile": false,
+    "pool_strategy": "combo",
+    "required_tier": "free"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "fallback_model_id": "gemini-2.5-pro",
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google",
+    "temperature": 0.3
+  },
+  "priority": 100,
+  "role": "Sovereign Core System Engine & Master Orchestrator",
+  "schema_version": "2.0.0",
+  "slash_commands": [],
+  "updated_at": "2026-10-12 10:09:48",
+  "version": "1.0.1"
 }
