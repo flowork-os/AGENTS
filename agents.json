@@ -907,8 +907,8 @@
         }
       ],
       "source_path": "agents/technical_documentation/te/tech-writer",
-      "updated_at": "2026-10-12 15:02:28",
-      "version": "1.0.6"
+      "updated_at": "2026-10-12 20:13:31",
+      "version": "1.0.7"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
@@ -1246,6 +1246,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 20:13:29",
+  "updated_at": "2026-10-12 20:13:45",
   "version": "2.0.0"
 }
