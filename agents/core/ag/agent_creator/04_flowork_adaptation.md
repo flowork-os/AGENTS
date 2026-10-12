@@ -40,20 +40,24 @@ Translate foreign tool requirements into native Flowork OS primitives:
 | `screenshot` | `flow_screenshot` | Native screen capture for visual validation |
 | `canvas`, `html_widget` | `render_visual` | Rich interactive HTML inline widgets |
 | `confirm_modal`, `ask_user` | `ask_question` | Interactive multi-choice blocking dialog modal |
+| `delegate`, `handoff`, `dispatch` | `team_dispatch` | Sovereign multi-agent handoff & swarm collaboration protocol |
 
 ### 📂 2. DIRECTORY & FILE SCAFFOLDING STANDARD:
 All new agents must be scaffolded under `flowork/agents/<agent-id>/`:
 
 1. **`agent.json` (Manifest):**
    - Exact 20 English keywords (`keywords: [...]`), pinned model/account, desk preference, and tools.
-   - **MANDATORY CATEGORY FIELDS:** Must declare official `"category_id"` (`CAT-001` through `CAT-015`) and official `"category"` slug:
+   - **MANDATORY CATEGORY FIELDS:** Must declare official `"category_id"` (`CAT-001` through `CAT-025`) and official `"category"` slug:
      * `CAT-001` (`healthcare`), `CAT-002` (`psychology`), `CAT-003` (`legal`), `CAT-004` (`education`), `CAT-005` (`technology`)
      * `CAT-006` (`finance`), `CAT-007` (`business`), `CAT-008` (`marketing`), `CAT-009` (`advertising`), `CAT-010` (`media_creative`)
      * `CAT-011` (`design`), `CAT-012` (`human_resources`), `CAT-013` (`science_research`), `CAT-014` (`automation_admin`), `CAT-015` (`core`)
+     * `CAT-016` (`arts_music_poetry`), `CAT-017` (`metaphysics_fengshui`), `CAT-018` (`architecture_spatial`), `CAT-019` (`culinary_gastronomy`), `CAT-020` (`sports_athletics`)
+     * `CAT-021` (`agriculture_ecology`), `CAT-022` (`diplomacy_negotiation`), `CAT-023` (`cybersecurity_forensics`), `CAT-024` (`hospitality_tourism`), `CAT-025` (`maritime_logistics`)
 2. **`00_identity.md` (Soul):**
    - Baseline identity (`always: true`, priority: 100).
 3. **`rules.md` (Law - MANDATORY ALWAYS-ACTIVE & DISPATCH MATRIX):**
    - Invariant laws and operating red-lines (**`always: true`**, `target: rules`, priority: 99).
+   - **MANDATORY JURISDICTIONAL AUTO-HANDOFF RULE:** Must declare that tasks outside this agent's category are strictly forbidden from self-execution and forbidden from passive refusal; must immediately trigger `team_dispatch(action: "HANDOFF", ...)`.
    - **MANDATORY TABLE:** Autonomous Reason Dispatch Protocol table containing at least 1 canonical trigger keyword from EVERY modular logic file in that agent.
 4. **`performance.md` (Evaluation):**
    - Quality criteria and verification benchmarks (`target: performance`, priority: 90).
