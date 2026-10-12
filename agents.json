@@ -1221,13 +1221,13 @@
         }
       ],
       "source_path": "agents/core/ag/agent_creator",
-      "updated_at": "2026-10-12 11:40:57",
-      "version": "1.0.2"
+      "updated_at": "2026-10-12 11:53:13",
+      "version": "1.0.3"
     }
   ],
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 11:53:11",
+  "updated_at": "2026-10-12 11:53:28",
   "version": "2.0.0"
 }
