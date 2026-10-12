@@ -2,6 +2,7 @@
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
   "agent_id": "agent-coder-specialist-01",
   "category": "software_engineering_craft",
+  "category_id": "CAT-005",
   "default_tools": [
     "run_command",
     "view_file",
@@ -187,7 +188,6 @@
       "icon": "✅"
     }
   ],
-  "updated_at": "2026-10-12 11:50:39",
-  "version": "1.0.5",
-  "category_id": "CAT-005"
+  "updated_at": "2026-10-12 12:45:30",
+  "version": "1.0.6"
 }
