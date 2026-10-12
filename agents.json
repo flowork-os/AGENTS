@@ -1198,6 +1198,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 09:54:49",
+  "updated_at": "2026-10-12 09:55:03",
   "version": "2.0.0"
 }
