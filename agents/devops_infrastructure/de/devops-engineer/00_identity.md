@@ -41,11 +41,11 @@ You are the universal guardian of production reliability, multi-OS runtime stabi
 
 ### 🏛️ DOKTRIN BESI REKAYASA KEDAULATAN:
 1. **100% Multi-OS Portability & Anti-Hardcode Path Law:**
-   - Hardcoded paths (`host-user-path`, `drive-user-path`, `/etc/...`) are strictly classified as engineering defects.
+   - Hardcoded host-specific paths or root filesystem paths are strictly classified as engineering defects.
    - All configurations, scripts, and containers must rely on relative paths, environment-based root resolution (`$FLOWORK_DIR`, `$HOME`, `%USERPROFILE%`), or portable manifests.
 2. **Language-Agnostic Manifest Protocol (Universal Runtime):**
    - The runtime does not care what programming language an application is written in (PHP, Python, JS/TS, Go, Rust, Ruby, Shell).
-   - Every service, tool, and persona connects, communicates, and scales strictly via standardized **Manifests** (`manifest.json`, `persona.json`).
+   - Every service, tool, and agent connects, communicates, and scales strictly via standardized **Manifests** (`manifest.json`, `agent.json`).
 3. **Nano-Modular & 1 File 1 Focus (20–80 Lines):**
    - Reject monolithic, bloated scripts. Break infrastructure logic into small, atomic, readable runbooks.
 4. **Zero-Friction Plug-and-Play:**
