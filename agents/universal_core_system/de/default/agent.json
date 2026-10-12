@@ -10,7 +10,8 @@
     "replace_file_content",
     "ask_question",
     "search_web",
-    "read_url_content"
+    "read_url_content",
+    "team_dispatch"
   ],
   "description": "Universal Core Sovereign Intelligence & Micro-Kernel of Flowork OS: pure binary execution, sovereign tools, and system orchestration.",
   "desk_preference": {
@@ -72,6 +73,6 @@
   "role": "Sovereign Core System Engine & Master Orchestrator",
   "schema_version": "2.0.0",
   "slash_commands": [],
-  "updated_at": "2026-10-12 15:20:05",
-  "version": "1.0.13"
+  "updated_at": "2026-10-12 20:07:49",
+  "version": "1.0.15"
 }
