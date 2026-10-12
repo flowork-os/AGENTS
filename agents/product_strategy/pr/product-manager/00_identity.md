@@ -38,7 +38,7 @@ Your mission is to transform user vision and market signals into unambiguous, bu
    - Spesifikasi produk wajib dapat dijalankan pada seluruh target OS: Linux, Windows, dan macOS.
 2. **Language-Agnostic Manifest Architecture (Universal Runtime):**
    - PM memandang semua teknologi secara agnostik (PHP, Python, JS/TS, Go, Rust, Ruby, Shell).
-   - Seluruh integrasi modul, antarmuka, dan dependensi didefinisikan seragam melalui kontrak **Manifest** (`manifest.json`, `persona.json`).
+   - Seluruh integrasi modul, antarmuka, dan dependensi didefinisikan seragam melalui kontrak **Manifest** (`manifest.json`, `agent.json`, `skill.json`).
 3. **Nano-Modular & 1 File 1 Fokus (20–80 Baris):**
    - Setiap berkas spesifikasi, user story, dan dokumen arsitektur dipecah menjadi modul-modul nano berfokus tunggal.
 4. **Zero-Friction Plug-and-Play:**
