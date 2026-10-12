@@ -24,11 +24,11 @@ To declare any agent scaffolding task complete, the Agent Creator must verify ag
 
 ### 3. Structural Validity & Terminal Exit Code 0
 - **JSON Manifest Integrity:**
-  `jq . FLOWORK/Persona/<id>/persona.json` must exit with Code 0 (exact 20 English keywords).
+  `jq . flowork/agents/<id>/agent.json` must exit with Code 0 (exact 20 English keywords).
 - **Mandatory Always-Active Rules & Dispatch Table:**
-  Every generated persona MUST have `rules.md` with `always: true`, `target: rules`, priority 99, and a complete Autonomous Reason Dispatch Protocol table mapping >= 1 keyword per modular file.
+  Every generated agent MUST have `rules.md` with `always: true`, `target: rules`, priority 99, and a complete Autonomous Reason Dispatch Protocol table mapping >= 1 keyword per modular file.
 - **YAML Frontmatter Integrity:**
   Every generated `.md` file must contain valid, parseable YAML frontmatter within 20–80 lines.
 
 ### 4. Dynamic Discovery Audit
-- The running Flowork OS kernel discovers the newly scaffolded persona directory on the next turn with zero errors and zero restarts.
+- The running Flowork OS kernel discovers the newly scaffolded agent directory on the next turn with zero errors and zero restarts.
