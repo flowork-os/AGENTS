@@ -404,16 +404,150 @@
       "version": "2.0.0"
     },
     {
+      "$schema": "https://floworkos.com/schemas/agent.v2.json",
       "agent_id": "agent-qa-01",
       "author": "Flowork OS",
       "category": "quality_assurance",
-      "description": "End-to-end testing, integration testing, fuzz testing, regression verification, and exit code 0 validation.",
+      "department": "engineering",
+      "description": "Quality assurance specialist enforcing two-axis code reviews, Playwright E2E browser automation, public seam TDD, boundary fuzzing, and zero-defect Exit Code 0 verification.",
+      "desk_preference": {
+        "active_animation": "executing_regression",
+        "avatar_mesh": "procedural_qa_specialist",
+        "coordinates": {
+          "x": -16.0,
+          "y": 0.0,
+          "z": -8.5
+        },
+        "desk_id": "desk-qa-engineer",
+        "desk_props": [
+          "test_matrix_display",
+          "status_beacons",
+          "bug_tracker_terminal"
+        ],
+        "idle_animation": "monitoring_test_suite",
+        "rotation_y": -90.0,
+        "zone": "QA & Verification Deck"
+      },
+      "exclude_keywords": [
+        "frontend styling",
+        "tailwind class",
+        "css flexbox",
+        "uiux layout",
+        "color palette",
+        "raw assembly",
+        "disassembly",
+        "reverse engineering",
+        "ida pro",
+        "ghidra",
+        "x86 asm",
+        "database orm query",
+        "prisma schema",
+        "typeorm migration",
+        "pure orm query",
+        "sql query optimization",
+        "marketing campaign",
+        "seo ranking",
+        "youtube channel",
+        "social media strategy",
+        "forex",
+        "trading crypto",
+        "stock trading",
+        "binance",
+        "metatrader"
+      ],
+      "file_patterns": [
+        "*test*.*",
+        "*spec*.*",
+        "tests/**",
+        "e2e/**",
+        "playwright.config.*",
+        "cypress.config.*",
+        "vitest.config.*",
+        "jest.config.*"
+      ],
+      "forbidden_tools": [
+        "bypass_vault",
+        "format_disk"
+      ],
       "icon": "🧪",
       "id": "qa-engineer",
       "is_default": false,
+      "keywords": [
+        "test",
+        "testing",
+        "qa",
+        "e2e",
+        "playwright",
+        "cypress",
+        "tdd",
+        "unit",
+        "integration",
+        "regression",
+        "fuzzing",
+        "coverage",
+        "assertion",
+        "smell",
+        "flaky",
+        "mock",
+        "seam",
+        "review",
+        "spec",
+        "verification"
+      ],
       "name": "QA Engineer & Test Automation Specialist",
+      "pinned_account": {
+        "account_id": "acc-qa-corp-01",
+        "email": "qa@floworkos.com",
+        "isolated_profile": true,
+        "pool_strategy": "pinned",
+        "required_tier": "pro"
+      },
+      "pinned_model": {
+        "enforce_lock": true,
+        "fallback_model_id": "claude-sonnet-4-6",
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google",
+        "temperature": 0.2
+      },
       "prefix": "qa",
+      "priority": 91,
+      "role": "Sovereign QA Engineer & Test Automation Specialist",
+      "schema_version": "2.0.0",
+      "slash_commands": [
+        {
+          "command": "/verify",
+          "description": "Physical terminal Exit Code 0 verification across all test suites",
+          "icon": "✅"
+        },
+        {
+          "command": "/e2e",
+          "description": "Run Playwright headless browser automation and visual screenshot audit",
+          "icon": "🎭"
+        },
+        {
+          "command": "/test-drive",
+          "description": "Enforce Red-Green-Refactor TDD cycle and mocking boundaries on public seams",
+          "icon": "🧪"
+        },
+        {
+          "command": "/inspect",
+          "description": "Launch two-axis code review on diff for Fowler smells and spec conformance",
+          "icon": "🛡️"
+        },
+        {
+          "command": "/fuzz",
+          "description": "Execute boundary condition, property-based fuzzing, and contract validation",
+          "icon": "💥"
+        }
+      ],
       "source_path": "agents/quality_assurance/qa/qa-engineer",
+      "tools": [
+        "run_command",
+        "view_file",
+        "write_to_file",
+        "replace_file_content",
+        "ask_question"
+      ],
       "version": "2.0.0"
     },
     {
@@ -498,6 +632,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 09:37:50",
+  "updated_at": "2026-10-12 09:38:07",
   "version": "2.0.0"
 }
