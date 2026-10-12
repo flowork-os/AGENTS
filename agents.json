@@ -872,15 +872,109 @@
       "version": "2.0.0"
     },
     {
+      "$schema": "https://floworkos.com/schemas/agent.v2.json",
       "agent_id": "agent-release-01",
       "author": "Flowork OS",
       "category": "release_operations",
-      "description": "Semantic versioning, changelog generation, clean git working tree verification, and release packaging.",
-      "icon": "📦",
+      "default_tools": [
+        "run_command",
+        "view_file",
+        "write_to_file",
+        "replace_file_content",
+        "ask_question"
+      ],
+      "department": "engineering",
+      "description": "Release operations specialist managing Semantic Versioning, automated changelogs, Agile-V preflight release gates, progressive canary rollouts, and cryptographic artifact provenance.",
+      "desk_preference": {
+        "desk_id": "desk-release-manager",
+        "zone": "Release & Operations Deck"
+      },
+      "exclude_keywords": [
+        "forex",
+        "trading crypto",
+        "seo marketing",
+        "youtube channel",
+        "music production",
+        "frontend styling",
+        "raw assembly",
+        "kernel panic"
+      ],
+      "file_patterns": [
+        "CHANGELOG.md",
+        "VERSION",
+        "package.json",
+        "Cargo.toml",
+        "release_checksums.json",
+        "dist/**",
+        "build/**",
+        "release/**",
+        "deploy/**"
+      ],
+      "icon": "🚀",
       "id": "release-manager",
       "is_default": false,
+      "keywords": [
+        "release manager",
+        "packaging specialist",
+        "semantic versioning",
+        "semver bump",
+        "automated changelog",
+        "keep a changelog",
+        "conventional commits",
+        "preflight release gate",
+        "dirty tree check",
+        "immutable git tag",
+        "human signoff gate",
+        "canary rollout",
+        "blue green deployment",
+        "automated rollback",
+        "release checksums",
+        "sha256 digest",
+        "binary stripping",
+        "supply chain security",
+        "slsa provenance",
+        "multi manifest sync"
+      ],
       "name": "Release Manager & Packaging Specialist",
+      "pinned_account": {
+        "account_id": "combo",
+        "pool_strategy": "combo"
+      },
+      "pinned_model": {
+        "enforce_lock": false,
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google"
+      },
       "prefix": "re",
+      "priority": 93,
+      "schema_version": "2.0.0",
+      "slash_commands": [
+        {
+          "command": "/release",
+          "description": "Execute full end-to-end release ceremony including preflight verification, changelog, and tagging",
+          "icon": "🚀"
+        },
+        {
+          "command": "/preflight",
+          "description": "Run comprehensive pre-release sanity checklist asserting clean git state, passing tests, and no debug artifacts",
+          "icon": "🛡️"
+        },
+        {
+          "command": "/semver",
+          "description": "Calculate semantic version bump (Major, Minor, Patch) based on breaking changes and Conventional Commits",
+          "icon": "🔢"
+        },
+        {
+          "command": "/changelog",
+          "description": "Synthesize Keep-a-Changelog compliant release notes categorized by Added, Changed, Fixed, and Security",
+          "icon": "📝"
+        },
+        {
+          "command": "/rollback",
+          "description": "Execute automated rollback playbook restoring previous stable deployment within 60 seconds",
+          "icon": "⏪"
+        }
+      ],
       "source_path": "agents/release_operations/re/release-manager",
       "version": "2.0.0"
     },
@@ -914,6 +1008,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 09:38:55",
+  "updated_at": "2026-10-12 09:39:09",
   "version": "2.0.0"
 }
