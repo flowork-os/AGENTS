@@ -1,116 +1,27 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
-  "schema_version": "2.0.0",
-  "id": "qa-engineer",
   "agent_id": "agent-qa-01",
-  "name": "QA Engineer & Test Automation Specialist",
-  "role": "Sovereign QA Engineer & Test Automation Specialist",
-  "icon": "🧪",
   "category": "quality_assurance",
-  "priority": 91,
+  "department": "engineering",
   "description": "Quality assurance specialist enforcing two-axis code reviews, Playwright E2E browser automation, public seam TDD, boundary fuzzing, and zero-defect Exit Code 0 verification.",
-  "pinned_model": {
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "temperature": 0.2,
-    "enforce_lock": true,
-    "fallback_model_id": "claude-sonnet-4-6"
-  },
-  "pinned_account": {
-    "account_id": "acc-qa-corp-01",
-    "email": "qa@floworkos.com",
-    "pool_strategy": "pinned",
-    "required_tier": "pro",
-    "isolated_profile": true
-  },
   "desk_preference": {
-    "zone": "QA & Verification Deck",
-    "desk_id": "desk-qa-engineer",
+    "active_animation": "executing_regression",
+    "avatar_mesh": "procedural_qa_specialist",
     "coordinates": {
       "x": -16.0,
       "y": 0.0,
       "z": -8.5
     },
-    "rotation_y": -90.0,
-    "avatar_mesh": "procedural_qa_specialist",
+    "desk_id": "desk-qa-engineer",
     "desk_props": [
       "test_matrix_display",
       "status_beacons",
       "bug_tracker_terminal"
     ],
     "idle_animation": "monitoring_test_suite",
-    "active_animation": "executing_regression"
+    "rotation_y": -90.0,
+    "zone": "QA & Verification Deck"
   },
-  "tools": [
-    "run_command",
-    "view_file",
-    "write_to_file",
-    "replace_file_content",
-    "ask_question"
-  ],
-  "forbidden_tools": [
-    "bypass_vault",
-    "format_disk"
-  ],
-  "slash_commands": [
-    {
-      "command": "/verify",
-      "description": "Physical terminal Exit Code 0 verification across all test suites",
-      "icon": "✅"
-    },
-    {
-      "command": "/e2e",
-      "description": "Run Playwright headless browser automation and visual screenshot audit",
-      "icon": "🎭"
-    },
-    {
-      "command": "/test-drive",
-      "description": "Enforce Red-Green-Refactor TDD cycle and mocking boundaries on public seams",
-      "icon": "🧪"
-    },
-    {
-      "command": "/inspect",
-      "description": "Launch two-axis code review on diff for Fowler smells and spec conformance",
-      "icon": "🛡️"
-    },
-    {
-      "command": "/fuzz",
-      "description": "Execute boundary condition, property-based fuzzing, and contract validation",
-      "icon": "💥"
-    }
-  ],
-  "file_patterns": [
-    "*test*.*",
-    "*spec*.*",
-    "tests/**",
-    "e2e/**",
-    "playwright.config.*",
-    "cypress.config.*",
-    "vitest.config.*",
-    "jest.config.*"
-  ],
-  "keywords": [
-    "test",
-    "testing",
-    "qa",
-    "e2e",
-    "playwright",
-    "cypress",
-    "tdd",
-    "unit",
-    "integration",
-    "regression",
-    "fuzzing",
-    "coverage",
-    "assertion",
-    "smell",
-    "flaky",
-    "mock",
-    "seam",
-    "review",
-    "spec",
-    "verification"
-  ],
   "exclude_keywords": [
     "frontend styling",
     "tailwind class",
@@ -138,5 +49,97 @@
     "binance",
     "metatrader"
   ],
-  "department": "engineering"
+  "file_patterns": [
+    "*test*.*",
+    "*spec*.*",
+    "tests/**",
+    "e2e/**",
+    "playwright.config.*",
+    "cypress.config.*",
+    "vitest.config.*",
+    "jest.config.*"
+  ],
+  "forbidden_tools": [
+    "bypass_vault",
+    "format_disk"
+  ],
+  "icon": "🧪",
+  "id": "qa-engineer",
+  "keywords": [
+    "test",
+    "testing",
+    "qa",
+    "e2e",
+    "playwright",
+    "cypress",
+    "tdd",
+    "unit",
+    "integration",
+    "regression",
+    "fuzzing",
+    "coverage",
+    "assertion",
+    "smell",
+    "flaky",
+    "mock",
+    "seam",
+    "review",
+    "spec",
+    "verification"
+  ],
+  "name": "QA Engineer & Test Automation Specialist",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "acc-qa-corp-01",
+    "email": "qa@floworkos.com",
+    "isolated_profile": true,
+    "pool_strategy": "pinned",
+    "required_tier": "pro"
+  },
+  "pinned_model": {
+    "enforce_lock": true,
+    "fallback_model_id": "claude-sonnet-4-6",
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google",
+    "temperature": 0.2
+  },
+  "priority": 91,
+  "role": "Sovereign QA Engineer & Test Automation Specialist",
+  "schema_version": "2.0.0",
+  "slash_commands": [
+    {
+      "command": "/verify",
+      "description": "Physical terminal Exit Code 0 verification across all test suites",
+      "icon": "✅"
+    },
+    {
+      "command": "/e2e",
+      "description": "Run Playwright headless browser automation and visual screenshot audit",
+      "icon": "🎭"
+    },
+    {
+      "command": "/test-drive",
+      "description": "Enforce Red-Green-Refactor TDD cycle and mocking boundaries on public seams",
+      "icon": "🧪"
+    },
+    {
+      "command": "/inspect",
+      "description": "Launch two-axis code review on diff for Fowler smells and spec conformance",
+      "icon": "🛡️"
+    },
+    {
+      "command": "/fuzz",
+      "description": "Execute boundary condition, property-based fuzzing, and contract validation",
+      "icon": "💥"
+    }
+  ],
+  "tools": [
+    "run_command",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "ask_question"
+  ],
+  "updated_at": "2026-10-12 10:10:45",
+  "version": "1.0.1"
 }
