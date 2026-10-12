@@ -417,6 +417,7 @@
       "agent_id": "agent-qa-01",
       "author": "Flowork OS",
       "category": "quality_assurance",
+      "category_id": "CAT-005",
       "department": "engineering",
       "description": "Quality assurance specialist enforcing two-axis code reviews, Playwright E2E browser automation, public seam TDD, boundary fuzzing, and zero-defect Exit Code 0 verification.",
       "desk_preference": {
@@ -558,8 +559,8 @@
         "replace_file_content",
         "ask_question"
       ],
-      "updated_at": "2026-10-12 10:50:33",
-      "version": "1.0.2"
+      "updated_at": "2026-10-12 11:39:26",
+      "version": "1.0.3"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
@@ -1221,6 +1222,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 11:39:24",
+  "updated_at": "2026-10-12 11:39:40",
   "version": "2.0.0"
 }
