@@ -1,26 +1,7 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
-  "schema_version": "2.0.0",
-  "id": "reverse-engineer",
   "agent_id": "agent-reverse-engineer-01",
-  "name": "Reverse Engineer & Binary Archaeologist",
-  "icon": "🔬",
-  "description": "Specialist in reverse engineering native binaries (ELF, PE, Mach-O), Electron/ASAR apps, .NET assemblies, and minified web bundles with strict epistemic evidence verification and clean-room reconstruction.",
   "category": "security_reverse_engineering",
-  "priority": 90,
-  "pinned_model": {
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "enforce_lock": false
-  },
-  "pinned_account": {
-    "account_id": "combo",
-    "pool_strategy": "combo"
-  },
-  "desk_preference": {
-    "zone": "Security Cluster",
-    "desk_id": "desk-reverse-engineer"
-  },
   "default_tools": [
     "run_command",
     "view_file",
@@ -31,6 +12,66 @@
     "search_web",
     "read_url_content"
   ],
+  "department": "security",
+  "description": "Specialist in reverse engineering native binaries (ELF, PE, Mach-O), Electron/ASAR apps, .NET assemblies, and minified web bundles with strict epistemic evidence verification and clean-room reconstruction.",
+  "desk_preference": {
+    "desk_id": "desk-reverse-engineer",
+    "zone": "Security Cluster"
+  },
+  "exclude_keywords": [
+    "forex",
+    "trading crypto",
+    "stock market",
+    "seo marketing",
+    "youtube channel"
+  ],
+  "file_patterns": [
+    "*.elf",
+    "*.so",
+    "*.dylib",
+    "*.exe",
+    "*.dll",
+    "*.asar",
+    "*.bin",
+    "*.apk"
+  ],
+  "icon": "🔬",
+  "id": "reverse-engineer",
+  "keywords": [
+    "reverse engineering",
+    "binary",
+    "decompile",
+    "disassembly",
+    "elf",
+    "pe",
+    "macho",
+    "asar",
+    "electron",
+    "cil",
+    ".net",
+    "ecma-335",
+    "clr",
+    "fl_cil_inspect",
+    "ghidra",
+    "hopper",
+    "ida",
+    "pcode",
+    "xrefs",
+    "reconstruction"
+  ],
+  "name": "Reverse Engineer & Binary Archaeologist",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google"
+  },
+  "priority": 90,
+  "schema_version": "2.0.0",
   "slash_commands": [
     {
       "command": "/triage",
@@ -63,44 +104,6 @@
       "icon": "🔍"
     }
   ],
-  "keywords": [
-    "reverse engineering",
-    "binary",
-    "decompile",
-    "disassembly",
-    "elf",
-    "pe",
-    "macho",
-    "asar",
-    "electron",
-    "cil",
-    ".net",
-    "ecma-335",
-    "clr",
-    "fl_cil_inspect",
-    "ghidra",
-    "hopper",
-    "ida",
-    "pcode",
-    "xrefs",
-    "reconstruction"
-  ],
-  "file_patterns": [
-    "*.elf",
-    "*.so",
-    "*.dylib",
-    "*.exe",
-    "*.dll",
-    "*.asar",
-    "*.bin",
-    "*.apk"
-  ],
-  "exclude_keywords": [
-    "forex",
-    "trading crypto",
-    "stock market",
-    "seo marketing",
-    "youtube channel"
-  ],
-  "department": "security"
+  "updated_at": "2026-10-12 10:11:58",
+  "version": "1.0.1"
 }
