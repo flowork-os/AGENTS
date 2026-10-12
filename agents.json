@@ -156,20 +156,15 @@
         "red green tdd",
         "tracer bullet",
         "frontier alignment",
-        "design tree",
         "dag task graph",
         "two axis review",
         "fowler smells",
         "git guardrails",
         "skeptical challenge",
-        "throwaway prototype",
         "worktree orchestration",
-        "bash wizard",
         "issue triage",
-        "out of scope",
         "domain modeling",
         "adr",
-        "feedback loop",
         "diagnose",
         "exit code 0",
         "pit of success"
@@ -1250,6 +1245,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 12:42:28",
+  "updated_at": "2026-10-12 12:43:09",
   "version": "2.0.0"
 }
