@@ -69,20 +69,15 @@
     "red green tdd",
     "tracer bullet",
     "frontier alignment",
-    "design tree",
     "dag task graph",
     "two axis review",
     "fowler smells",
     "git guardrails",
     "skeptical challenge",
-    "throwaway prototype",
     "worktree orchestration",
-    "bash wizard",
     "issue triage",
-    "out of scope",
     "domain modeling",
     "adr",
-    "feedback loop",
     "diagnose",
     "exit code 0",
     "pit of success"
@@ -193,5 +188,6 @@
     }
   ],
   "updated_at": "2026-10-12 11:50:39",
-  "version": "1.0.5"
+  "version": "1.0.5",
+  "category_id": "CAT-005"
 }
