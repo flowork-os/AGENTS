@@ -13,7 +13,7 @@ trigger:
   - flowork-adaptation
   - flowork
   - scaffold
-  - persona.json
+  - agent.json
   - modular
   - frontmatter
   - trigger
@@ -42,15 +42,15 @@ Translate foreign tool requirements into native Flowork OS primitives:
 | `confirm_modal`, `ask_user` | `ask_question` | Interactive multi-choice blocking dialog modal |
 
 ### 📂 2. DIRECTORY & FILE SCAFFOLDING STANDARD:
-All new personas must be scaffolded under `FLOWORK/Persona/<persona-id>/`:
+All new agents must be scaffolded under `flowork/agents/<agent-id>/`:
 
-1. **`persona.json` (Manifest):**
+1. **`agent.json` (Manifest):**
    - Exact 20 English keywords (`keywords: [...]`), pinned model/account, desk preference, and tools.
 2. **`00_identity.md` (Soul):**
    - Baseline identity (`always: true`, priority: 100).
 3. **`rules.md` (Law - MANDATORY ALWAYS-ACTIVE & DISPATCH MATRIX):**
    - Invariant laws and operating red-lines (**`always: true`**, `target: rules`, priority: 99).
-   - **MANDATORY TABLE:** Autonomous Reason Dispatch Protocol table containing at least 1 canonical trigger keyword from EVERY modular logic file in that persona.
+   - **MANDATORY TABLE:** Autonomous Reason Dispatch Protocol table containing at least 1 canonical trigger keyword from EVERY modular logic file in that agent.
 4. **`performance.md` (Evaluation):**
    - Quality criteria and verification benchmarks (`target: performance`, priority: 90).
 5. **`01_...md`, `02_...md` (Domain Runbooks):**
@@ -58,6 +58,6 @@ All new personas must be scaffolded under `FLOWORK/Persona/<persona-id>/`:
    - Every modular file MUST declare its dedicated canonical dispatch keyword in `keywords:`.
 
 ### ✅ 3. VERIFICATION & QUALITY CONTROL:
-1. Verify `persona.json` with JSON validator (`jq` or python `-m json.tool`).
+1. Verify `agent.json` with JSON validator (`jq` or python `-m json.tool`).
 2. Verify every `rules.md` has `always: true` and complete dispatch table.
-3. Confirm new persona directory is hot-reloaded by the kernel with zero restarts.
+3. Confirm new agent directory is hot-reloaded by the kernel with zero restarts.
