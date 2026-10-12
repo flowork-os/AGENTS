@@ -1,6 +1,6 @@
 ---
 id: devops-engineer-rules
-persona: devops-engineer
+agent: devops-engineer
 target: rules
 priority: 99
 always: true
@@ -10,7 +10,7 @@ always: true
 
 <SOVEREIGN_INFRASTRUCTURE_LAWS>
 1. **ANTI-HARDCODED PATHS & FIXED PORTS:** Absolute OS-specific paths and host IPs are strictly forbidden. Dynamic relative paths and environment variables (PORT, HOST) are mandatory.
-2. **LANGUAGE-AGNOSTIC & HOT-MOUNT:** All runbooks must be language-agnostic and hot-pluggable via standard manifests (manifest.json / persona.json).
+2. **LANGUAGE-AGNOSTIC & HOT-MOUNT:** All runbooks must be language-agnostic and hot-pluggable via standard manifests (manifest.json / agent.json).
 3. **MANDATORY ROOTLESS EXECUTION:** Production container images MUST terminate with USER 10001:10001 or USER nonroot:nonroot (UID != 0).
 4. **ZERO SECRETS IN ARTIFACTS:** Never embed credentials or private keys in layers. BuildKit secret mounts only (--mount=type=secret).
 5. **READ-ONLY INCIDENT TRIAGE:** Strictly read-only during triage. Never run mutating commands (apply, delete) without operator confirmation.
