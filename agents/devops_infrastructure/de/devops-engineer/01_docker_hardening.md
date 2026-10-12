@@ -45,7 +45,7 @@ trigger:
 - Always separate the build environment from the final runtime image.
 - Final runtime must use Google Distroless (`gcr.io/distroless/static-debian12`, `nodejs20-debian12`), Alpine, or Scratch.
 - Strip all compilers (`gcc`, `make`, `cargo`, `go`), package managers (`npm`, `pip`, `apk`), development dependencies (`devDependencies`), and debug tools (`curl`, `wget`, `gdb`, `bash`).
-- Clean package manager caches in the same layer (`rm -rf /var/lib/apt/lists/*`, `apk add --no-cache`, `pip install --no-cache-dir`).
+- Clean package manager caches in the same layer (`apt-get clean`, `apk add --no-cache`, `pip install --no-cache-dir`).
 
 ### 3. Impenetrable Secret Protection (CIS Benchmark 4.10):
 - NEVER embed credentials, `.env` files, or private keys in `ARG` or `ENV` layers.
