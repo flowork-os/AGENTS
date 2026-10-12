@@ -2,6 +2,7 @@
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
   "agent_id": "agent-pm-01",
   "category": "product_strategy",
+  "category_id": "CAT-007",
   "default_tools": [
     "ask_question",
     "view_file",
@@ -99,7 +100,6 @@
       "icon": "🛡️"
     }
   ],
-  "updated_at": "2026-10-12 11:51:49",
-  "version": "1.0.4",
-  "category_id": "CAT-007"
+  "updated_at": "2026-10-12 12:46:38",
+  "version": "1.0.5"
 }
