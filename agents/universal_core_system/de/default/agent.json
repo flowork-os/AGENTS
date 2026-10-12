@@ -31,27 +31,6 @@
   },
   "icon": "⭐",
   "id": "default",
-  "name": "Mr. Flow (Core Sovereign Engine)",
-  "owner": "awenkaudico",
-  "pinned_account": {
-    "account_id": "combo",
-    "isolated_profile": false,
-    "pool_strategy": "combo",
-    "required_tier": "free"
-  },
-  "pinned_model": {
-    "enforce_lock": false,
-    "fallback_model_id": "gemini-2.5-pro",
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "temperature": 0.3
-  },
-  "priority": 100,
-  "role": "Sovereign Core System Engine & Master Orchestrator",
-  "schema_version": "2.0.0",
-  "slash_commands": [],
-  "updated_at": "2026-10-12 11:50:34",
-  "version": "1.0.9",
   "keywords": [
     "core",
     "universal_core_system",
@@ -73,5 +52,26 @@
     "epistemic_audit",
     "runbook_execution",
     "flowork_os"
-  ]
+  ],
+  "name": "Mr. Flow (Core Sovereign Engine)",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "isolated_profile": false,
+    "pool_strategy": "combo",
+    "required_tier": "free"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "fallback_model_id": "gemini-2.5-pro",
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google",
+    "temperature": 0.3
+  },
+  "priority": 100,
+  "role": "Sovereign Core System Engine & Master Orchestrator",
+  "schema_version": "2.0.0",
+  "slash_commands": [],
+  "updated_at": "2026-10-12 12:45:25",
+  "version": "1.0.10"
 }
