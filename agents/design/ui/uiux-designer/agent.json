@@ -1,0 +1,105 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "agent_id": "agent-uiux-01",
+  "category": "design_systems",
+  "default_tools": [
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "run_command",
+    "generate_image",
+    "ask_question",
+    "fl_prototype_harness"
+  ],
+  "department": "design",
+  "description": "Design systems specialist crafting responsive layouts, design tokens, micro-interactions, accessibility hierarchies, dark mode ergonomics, and clean Flowork CSS architectures.",
+  "desk_preference": {
+    "desk_id": "desk-uiux-designer",
+    "zone": "Creative Hub"
+  },
+  "exclude_keywords": [
+    "kernel panic",
+    "assembly",
+    "hex dump",
+    "decompilation",
+    "forex valas",
+    "database migration",
+    "kubernetes cluster",
+    "docker daemon"
+  ],
+  "file_patterns": [
+    "*.css",
+    "*.html",
+    "*.svg",
+    "styles/**",
+    "design/**",
+    "tokens/**",
+    "assets/**"
+  ],
+  "icon": "🎨",
+  "id": "uiux-designer",
+  "keywords": [
+    "ui designer",
+    "ux architect",
+    "design system",
+    "design tokens",
+    "flowork css",
+    "css architecture",
+    "fluid typography",
+    "css clamp",
+    "wcag accessibility",
+    "color contrast",
+    "dark mode",
+    "micro interactions",
+    "component states",
+    "focus visible",
+    "zero cls",
+    "responsive layout",
+    "ui prototype",
+    "variant switcher",
+    "visual hierarchy",
+    "anti ai slop"
+  ],
+  "name": "UI/UX & Design Systems Architect",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google"
+  },
+  "priority": 91,
+  "schema_version": "2.0.0",
+  "slash_commands": [
+    {
+      "command": "/tokens",
+      "description": "Scaffold cohesive design token matrix (CSS custom properties, colors, spacing, radius)",
+      "icon": "🎨"
+    },
+    {
+      "command": "/critique-ui",
+      "description": "Perform ruthless visual design audit on layout balance, contrast, typography, and visual hierarchy",
+      "icon": "👁️"
+    },
+    {
+      "command": "/responsive",
+      "description": "Audit and enforce fluid responsive breakpoints (mobile, tablet, desktop, ultra-wide)",
+      "icon": "📱"
+    },
+    {
+      "command": "/dark-mode",
+      "description": "Tune dark mode contrast ratios (WCAG AA/AAA), OLED pure black vs deep slate, and laser glow accents",
+      "icon": "🌙"
+    },
+    {
+      "command": "/prototype-ui",
+      "description": "Scaffold interactive zero-build HTML/CSS prototype harness with variant switcher pill",
+      "icon": "🔬"
+    }
+  ],
+  "updated_at": "2026-10-12 11:39:56",
+  "version": "1.0.3"
+}

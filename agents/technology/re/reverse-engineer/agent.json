@@ -1,0 +1,109 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "agent_id": "agent-reverse-engineer-01",
+  "category": "security_reverse_engineering",
+  "default_tools": [
+    "run_command",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "ask_question",
+    "search_tools",
+    "search_web",
+    "read_url_content"
+  ],
+  "department": "security",
+  "description": "Specialist in reverse engineering native binaries (ELF, PE, Mach-O), Electron/ASAR apps, .NET assemblies, and minified web bundles with strict epistemic evidence verification and clean-room reconstruction.",
+  "desk_preference": {
+    "desk_id": "desk-reverse-engineer",
+    "zone": "Security Cluster"
+  },
+  "exclude_keywords": [
+    "forex",
+    "trading crypto",
+    "stock market",
+    "seo marketing",
+    "youtube channel"
+  ],
+  "file_patterns": [
+    "*.elf",
+    "*.so",
+    "*.dylib",
+    "*.exe",
+    "*.dll",
+    "*.asar",
+    "*.bin",
+    "*.apk"
+  ],
+  "icon": "🔬",
+  "id": "reverse-engineer",
+  "keywords": [
+    "reverse engineering",
+    "binary",
+    "decompile",
+    "disassembly",
+    "elf",
+    "pe",
+    "macho",
+    "asar",
+    "electron",
+    "cil",
+    ".net",
+    "ecma-335",
+    "clr",
+    "fl_cil_inspect",
+    "ghidra",
+    "hopper",
+    "ida",
+    "pcode",
+    "xrefs",
+    "reconstruction"
+  ],
+  "name": "Reverse Engineer & Binary Archaeologist",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google"
+  },
+  "priority": 90,
+  "schema_version": "2.0.0",
+  "slash_commands": [
+    {
+      "command": "/triage",
+      "description": "Perform high-level container triage, headers, mitigations (NX, PIE, Canary, RELRO), and manifest extraction",
+      "icon": "🛡️"
+    },
+    {
+      "command": "/decompile",
+      "description": "Deep function deconstruction, extracting pseudocode, assembly instructions, basic blocks, and XREFs",
+      "icon": "🧩"
+    },
+    {
+      "command": "/trace-flow",
+      "description": "Trace data-flow paths, call graphs, high-pcode def-use chains, and IPC channel boundaries",
+      "icon": "⚡"
+    },
+    {
+      "command": "/cil-inspect",
+      "description": "Inspect .NET assemblies, CLR metadata streams, and disassemble ECMA-335 CIL bytecode",
+      "icon": "📦"
+    },
+    {
+      "command": "/reconstruct",
+      "description": "Perform clean-room implementation of extracted features into modern, clean TypeScript, Rust, or C++",
+      "icon": "⚙️"
+    },
+    {
+      "command": "/verify-evidence",
+      "description": "Audit epistemic evidence ledger, reconcile static vs runtime reachability, and verify test vectors",
+      "icon": "🔍"
+    }
+  ],
+  "updated_at": "2026-10-12 11:40:39",
+  "version": "1.0.2"
+}
