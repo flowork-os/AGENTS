@@ -1120,7 +1120,8 @@
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
       "agent_id": "agent-creator-01",
       "author": "Flowork OS",
-      "category": "agent_architecture",
+      "category": "core",
+      "category_id": "CAT-015",
       "default_tools": [
         "ask_question",
         "search_web",
@@ -1219,14 +1220,14 @@
           "icon": "🔍"
         }
       ],
-      "source_path": "agents/agent_architecture/ag/agent_creator",
-      "updated_at": "2026-10-12 10:12:18",
-      "version": "1.0.1"
+      "source_path": "agents/core/ag/agent_creator",
+      "updated_at": "2026-10-12 11:40:57",
+      "version": "1.0.2"
     }
   ],
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-12 11:40:56",
+  "updated_at": "2026-10-12 11:41:13",
   "version": "2.0.0"
 }
