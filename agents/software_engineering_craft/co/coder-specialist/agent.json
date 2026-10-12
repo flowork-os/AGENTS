@@ -1,26 +1,7 @@
 {
   "$schema": "https://floworkos.com/schemas/agent.v2.json",
-  "schema_version": "2.0.0",
-  "id": "coder-specialist",
   "agent_id": "agent-coder-specialist-01",
-  "name": "Sovereign Coder Specialist & Systems Craftsman",
-  "icon": "⚡",
-  "description": "High-discipline software engineering specialist enforcing Ousterhout deep modules, empirical red-green TDD, frontier alignment, DAG task graphs, two-axis independent code review, git safety guardrails, skeptical challenge, and physical Exit Code 0 verification.",
   "category": "software_engineering_craft",
-  "priority": 95,
-  "pinned_model": {
-    "model_id": "gemini-3.8-flash-high",
-    "provider": "google",
-    "enforce_lock": false
-  },
-  "pinned_account": {
-    "account_id": "combo",
-    "pool_strategy": "combo"
-  },
-  "desk_preference": {
-    "zone": "Engineering Pod",
-    "desk_id": "desk-coder-specialist"
-  },
   "default_tools": [
     "run_command",
     "view_file",
@@ -38,6 +19,87 @@
     "fl_git_guardrails",
     "fl_prototype_harness"
   ],
+  "department": "engineering",
+  "description": "High-discipline software engineering specialist enforcing Ousterhout deep modules, empirical red-green TDD, frontier alignment, DAG task graphs, two-axis independent code review, git safety guardrails, skeptical challenge, and physical Exit Code 0 verification.",
+  "desk_preference": {
+    "desk_id": "desk-coder-specialist",
+    "zone": "Engineering Pod"
+  },
+  "exclude_keywords": [
+    "forex",
+    "trading crypto",
+    "stock market",
+    "eurusd",
+    "gbpusd",
+    "metatrader",
+    "frontend styling",
+    "css flexbox",
+    "tailwind styling",
+    "uiux layout",
+    "color palette",
+    "design tokens"
+  ],
+  "file_patterns": [
+    "*.ts",
+    "*.tsx",
+    "*.rs",
+    "*.go",
+    "*.py",
+    "*.js",
+    "*.jsx",
+    "*.c",
+    "*.cpp",
+    "*.h",
+    "Cargo.toml",
+    "package.json",
+    "go.mod",
+    "Makefile",
+    "GLOSSARY.md",
+    "docs/adr/**",
+    ".out-of-scope/**"
+  ],
+  "icon": "⚡",
+  "id": "coder-specialist",
+  "keywords": [
+    "coder specialist",
+    "software craftsman",
+    "deep module",
+    "ousterhout",
+    "seam architecture",
+    "red green tdd",
+    "tracer bullet",
+    "frontier alignment",
+    "design tree",
+    "dag task graph",
+    "two axis review",
+    "fowler smells",
+    "git guardrails",
+    "skeptical challenge",
+    "throwaway prototype",
+    "worktree orchestration",
+    "bash wizard",
+    "issue triage",
+    "out of scope",
+    "domain modeling",
+    "adr",
+    "feedback loop",
+    "diagnose",
+    "exit code 0",
+    "pit of success"
+  ],
+  "name": "Sovereign Coder Specialist & Systems Craftsman",
+  "owner": "awenkaudico",
+  "pinned_account": {
+    "account_id": "combo",
+    "pool_strategy": "combo"
+  },
+  "pinned_model": {
+    "enforce_lock": false,
+    "model_id": "gemini-3.8-flash-high",
+    "provider": "google"
+  },
+  "priority": 95,
+  "schema_version": "2.0.0",
   "slash_commands": [
     {
       "command": "/fl-align",
@@ -130,65 +192,6 @@
       "icon": "✅"
     }
   ],
-  "keywords": [
-    "coder specialist",
-    "software craftsman",
-    "deep module",
-    "ousterhout",
-    "seam architecture",
-    "red green tdd",
-    "tracer bullet",
-    "frontier alignment",
-    "design tree",
-    "dag task graph",
-    "two axis review",
-    "fowler smells",
-    "git guardrails",
-    "skeptical challenge",
-    "throwaway prototype",
-    "worktree orchestration",
-    "bash wizard",
-    "issue triage",
-    "out of scope",
-    "domain modeling",
-    "adr",
-    "feedback loop",
-    "diagnose",
-    "exit code 0",
-    "pit of success"
-  ],
-  "file_patterns": [
-    "*.ts",
-    "*.tsx",
-    "*.rs",
-    "*.go",
-    "*.py",
-    "*.js",
-    "*.jsx",
-    "*.c",
-    "*.cpp",
-    "*.h",
-    "Cargo.toml",
-    "package.json",
-    "go.mod",
-    "Makefile",
-    "GLOSSARY.md",
-    "docs/adr/**",
-    ".out-of-scope/**"
-  ],
-  "exclude_keywords": [
-    "forex",
-    "trading crypto",
-    "stock market",
-    "eurusd",
-    "gbpusd",
-    "metatrader",
-    "frontend styling",
-    "css flexbox",
-    "tailwind styling",
-    "uiux layout",
-    "color palette",
-    "design tokens"
-  ],
-  "department": "engineering"
+  "updated_at": "2026-10-12 10:09:54",
+  "version": "1.0.1"
 }
