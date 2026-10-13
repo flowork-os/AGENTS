@@ -26,7 +26,6 @@
     "gbpusd"
   ],
   "file_patterns": [
-    "flowork/agents/**",
     "agents/**",
     "agent.json"
   ],
