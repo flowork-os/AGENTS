@@ -43,7 +43,7 @@ Translate foreign tool requirements into native Flowork OS primitives:
 | `delegate`, `handoff`, `dispatch` | `team_dispatch` | Sovereign multi-agent handoff & swarm collaboration protocol |
 
 ### 📂 2. DIRECTORY & FILE SCAFFOLDING STANDARD:
-All new agents must be scaffolded strictly within the **Flowork Engine Body** under `agents/<agent-id>/` (NEVER in the user's workspace directory, and NEVER nested as `flowork/agents/`):
+All new agents must be scaffolded strictly within the **Flowork Engine Body** under `{engine_root}/agents/<agent-id>/` (NEVER in `{effective_ws}` / user project directory, and NEVER nested as `{engine_root}/flowork/agents/`):
 
 1. **`agent.json` (Manifest):**
    - Exact 20 English keywords (`keywords: [...]`), pinned model/account, desk preference, and tools.
