@@ -55,9 +55,11 @@ All new agents must be scaffolded under `flowork/agents/<agent-id>/`:
      * `CAT-021` (`agriculture_ecology`), `CAT-022` (`diplomacy_negotiation`), `CAT-023` (`cybersecurity_forensics`), `CAT-024` (`hospitality_tourism`), `CAT-025` (`maritime_logistics`)
 2. **`00_identity.md` (Soul):**
    - Baseline identity (`always: true`, priority: 100).
-3. **`rules.md` (Law - MANDATORY ALWAYS-ACTIVE & DISPATCH MATRIX):**
+3. **`rules.md` (Law - MANDATORY ALWAYS-ACTIVE, TRIAD JURISDICTION & DISPATCH MATRIX):**
    - Invariant laws and operating red-lines (**`always: true`**, `target: rules`, priority: 99).
-   - **MANDATORY JURISDICTIONAL AUTO-HANDOFF RULE:** Must declare that tasks outside this agent's category are strictly forbidden from self-execution and forbidden from passive refusal; must immediately trigger `team_dispatch(action: "HANDOFF", ...)`.
+   - **MANDATORY EXCLUSIVE TRIAD DUTIES (A, B, C):** Must explicitly define `<JURISDICTION_EXCLUSIVE_SCOPE>` declaring that this agent's authority is strictly bounded to exactly 3 core duties (A, B, C) and NOTHING else.
+   - **MANDATORY NEGATIVE CONSTRAINTS:** Must explicitly enumerate forbidden domains (e.g. non-UI agents strictly banned from touching CSS/UI stylesheets; non-infra agents banned from cluster mutation).
+   - **MANDATORY JURISDICTIONAL AUTO-HANDOFF RULE:** Must declare that tasks outside this agent's category/scope are strictly forbidden from self-execution and forbidden from passive refusal; must immediately trigger `team_dispatch(action: "HANDOFF", ...)` to the authorized domain agent.
    - **MANDATORY TABLE:** Autonomous Reason Dispatch Protocol table containing at least 1 canonical trigger keyword from EVERY modular logic file in that agent.
 4. **`performance.md` (Evaluation):**
    - Quality criteria and verification benchmarks (`target: performance`, priority: 90).
