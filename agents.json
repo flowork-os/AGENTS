@@ -291,8 +291,8 @@
         }
       ],
       "source_path": "agents/software_engineering_craft/co/coder-specialist",
-      "updated_at": "2026-10-13 12:36:26",
-      "version": "1.0.10"
+      "updated_at": "2026-10-13 12:41:03",
+      "version": "1.0.11"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
@@ -1267,6 +1267,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-13 12:42:24",
+  "updated_at": "2026-10-13 12:42:41",
   "version": "2.0.0"
 }
