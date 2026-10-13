@@ -80,8 +80,8 @@
       "schema_version": "2.0.0",
       "slash_commands": [],
       "source_path": "agents/universal_core_system/de/default",
-      "updated_at": "2026-10-13 11:55:51",
-      "version": "1.0.17"
+      "updated_at": "2026-10-13 12:36:12",
+      "version": "1.0.19"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
@@ -1267,6 +1267,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-13 12:31:22",
+  "updated_at": "2026-10-13 12:36:24",
   "version": "2.0.0"
 }
