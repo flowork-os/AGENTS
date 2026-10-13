@@ -26,6 +26,13 @@
     "desk_id": "desk-coder-specialist",
     "zone": "Engineering Pod"
   },
+  "exclude_file_patterns": [
+    "*.css",
+    "styles/**",
+    "design/**",
+    "tokens/**",
+    "*.svg"
+  ],
   "exclude_keywords": [
     "forex",
     "trading crypto",
@@ -38,7 +45,14 @@
     "tailwind styling",
     "uiux layout",
     "color palette",
-    "design tokens"
+    "design tokens",
+    "desain tampilan",
+    "styling tampilan",
+    "glassmorphism",
+    "animasi css",
+    "warna tema",
+    "gui layout",
+    "visual theme"
   ],
   "file_patterns": [
     "*.ts",
@@ -188,6 +202,6 @@
       "icon": "✅"
     }
   ],
-  "updated_at": "2026-10-12 20:11:47",
-  "version": "1.0.8"
+  "updated_at": "2026-10-13 11:56:15",
+  "version": "1.0.9"
 }
