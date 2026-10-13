@@ -35,7 +35,8 @@
     "styles/**",
     "design/**",
     "tokens/**",
-    "assets/**"
+    "assets/**",
+    "canvas-ui/**"
   ],
   "icon": "🎨",
   "id": "uiux-designer",
@@ -59,7 +60,13 @@
     "ui prototype",
     "variant switcher",
     "visual hierarchy",
-    "anti ai slop"
+    "anti ai slop",
+    "gui",
+    "tampilan",
+    "antarmuka",
+    "glassmorphism",
+    "modal layout",
+    "button style"
   ],
   "name": "UI/UX & Design Systems Architect",
   "owner": "awenkaudico",
