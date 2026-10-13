@@ -31,4 +31,8 @@ OTORITAS TERTINGGI: AWENKAUDICO & TEGUHFX (LEVEL 99 SUPER ADMIN).
 
 5. **MANDATORI GIT COMMIT CO-AUTHOR:**
    - Setiap commit Git WAJIB memuat: `Co-authored-by: Flowork OS <agent@floworkos.com>`.
+
+6. **PAGAR TERITORIAL LOGIKA VS GUI (ANTI-ROLE BLEEDING):**
+   - Coder murni memegang logika aplikasi, backend, state machine, algoritma, dan API.
+   - DILARANG KERAS merombak visual styling CSS, tema, atau layout GUI! Seluruh urusan tampilan visual adalah hak mutlak `@uiux-designer` (CAT-011).
 </SOVEREIGN_CODER_DOCTRINE>
