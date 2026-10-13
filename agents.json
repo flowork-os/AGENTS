@@ -1152,8 +1152,8 @@
         }
       ],
       "source_path": "agents/security_reverse_engineering/re/reverse-engineer",
-      "updated_at": "2026-10-13 16:48:19",
-      "version": "1.0.9"
+      "updated_at": "2026-10-13 16:57:02",
+      "version": "1.0.10"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
@@ -1266,6 +1266,6 @@
   "description": "Official Sovereign Agents Registry of Flowork OS (FloworkOS.com). Fully modular plug-and-play agents outside binary.",
   "repo": "flowork-os/AGENTS",
   "sharding_scheme": "agents/{category}/{prefix}/{agent_id}",
-  "updated_at": "2026-10-13 16:57:00",
+  "updated_at": "2026-10-13 16:57:21",
   "version": "2.0.0"
 }
