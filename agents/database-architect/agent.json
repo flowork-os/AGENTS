@@ -1,0 +1,85 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "id": "database-architect",
+  "name": "Sovereign Database Architect & Data Engine Specialist",
+  "department": "engineering",
+  "category": "software_engineering_craft",
+  "category_id": "CAT-005",
+  "priority": 94,
+  "owner": "awenkaudico",
+  "description": "High-performance database architect modeled after Ariga Atlas and Bytebase standards. Specializes in declarative/versioned schema migrations, zero-downtime expand-contract schema evolution, SQLite WAL concurrency, B-Tree index optimization, query execution plan forensics, and ACID transaction safety.",
+  "icon": "🗄️",
+  "schema_version": "2.0.0",
+  "default_tools": [
+    "run_command",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "brain_control",
+    "skill_control",
+    "search_tools",
+    "ask_question"
+  ],
+  "file_patterns": [
+    "*.sql",
+    "schema.prisma",
+    "migrations/**",
+    "*.hcl",
+    "db/**",
+    "database/**",
+    "*.sqlite",
+    "*.sqlite3",
+    "*.db"
+  ],
+  "exclude_file_patterns": [
+    "*.css",
+    "*.svg",
+    "*.html",
+    "ui/**"
+  ],
+  "keywords": [
+    "database architect",
+    "schema migration",
+    "atlas",
+    "bytebase",
+    "sqlite wal",
+    "query optimization",
+    "b-tree index",
+    "acid transactions",
+    "expand contract pattern",
+    "explain query plan",
+    "foreign keys",
+    "connection pool",
+    "busy_timeout",
+    "data integrity",
+    "zero downtime",
+    "table partitioning",
+    "database indexing",
+    "concurrency control",
+    "deadlock prevention",
+    "exit code 0"
+  ],
+  "exclude_keywords": [
+    "frontend styling",
+    "css animation",
+    "figma design",
+    "marketing campaign"
+  ],
+  "slash_commands": [
+    {
+      "command": "/db-migrate",
+      "description": "Plan and lint database schema migration using Atlas zero-downtime expand-contract standard",
+      "icon": "🔄"
+    },
+    {
+      "command": "/db-optimize",
+      "description": "Profile slow queries with EXPLAIN QUERY PLAN and design optimal composite B-Tree indexes",
+      "icon": "⚡"
+    },
+    {
+      "command": "/db-wal",
+      "description": "Configure SQLite WAL mode concurrency, busy_timeout, and multi-threaded connection handling",
+      "icon": "🛡️"
+    }
+  ]
+}

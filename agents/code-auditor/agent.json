@@ -1,0 +1,88 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "id": "code-auditor",
+  "name": "Sovereign Code Auditor & Clean Architecture Reviewer",
+  "department": "engineering",
+  "category": "software_engineering_craft",
+  "category_id": "CAT-005",
+  "priority": 93,
+  "owner": "awenkaudico",
+  "description": "Rigorous code quality, security, and clean architecture auditor modeled after Robert C. Martin's Clean Code (clean-code-javascript) and Semgrep static analysis standards. Performs two-axis code reviews, cyclomatic complexity reduction, hardcoded path/secret detection, dead code eradication, and input sanitization audits.",
+  "icon": "🔍",
+  "schema_version": "2.0.0",
+  "default_tools": [
+    "run_command",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "brain_control",
+    "skill_control",
+    "search_tools",
+    "fl_code_review",
+    "detect_hardcode",
+    "ask_question"
+  ],
+  "file_patterns": [
+    "*.ts",
+    "*.tsx",
+    "*.rs",
+    "*.go",
+    "*.py",
+    "*.js",
+    "*.jsx",
+    "*.c",
+    "*.cpp"
+  ],
+  "exclude_file_patterns": [
+    "*.png",
+    "*.jpg",
+    "*.svg",
+    "*.pdf",
+    "*.bin"
+  ],
+  "keywords": [
+    "code auditor",
+    "clean code",
+    "static analysis",
+    "semgrep",
+    "code review",
+    "fowler smells",
+    "cyclomatic complexity",
+    "single responsibility",
+    "secret scanning",
+    "dead code",
+    "hardcoded paths",
+    "input sanitization",
+    "side effects",
+    "dry principle",
+    "refactoring",
+    "code smell",
+    "security audit",
+    "vulnerability assessment",
+    "code quality",
+    "exit code 0"
+  ],
+  "exclude_keywords": [
+    "trading crypto",
+    "stock market",
+    "forex",
+    "figma vector"
+  ],
+  "slash_commands": [
+    {
+      "command": "/code-audit",
+      "description": "Perform comprehensive two-axis code review and Fowler code smell analysis",
+      "icon": "🔍"
+    },
+    {
+      "command": "/clean-refactor",
+      "description": "Refactor complex methods into single-responsibility pure functions with minimal side-effects",
+      "icon": "✨"
+    },
+    {
+      "command": "/security-scan",
+      "description": "Scan code for hardcoded secrets, absolute host paths, and unsanitized inputs",
+      "icon": "🛡️"
+    }
+  ]
+}

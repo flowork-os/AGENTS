@@ -2,45 +2,38 @@
 
 Official repository for **Flowork OS Sovereign Agents** ([floworkos.com](https://floworkos.com)).
 
-Flowork OS decouples agent personas, reasoning styles, and operational prompts completely from the binary engine. All agents are 100% modular, plug-and-play, and discoverable via high-performance sharded subfolders.
+Flowork OS decouples agent personas, reasoning styles, and operational prompts completely from the binary engine. All agents are 100% modular, plug-and-play, and operate under the **4-Layer Zero-Overlap Prompt Pyramid v3.0.0**.
 
 ---
 
-## 🏛️ Subfolder Sharding Hierarchy
+## 🏛️ Modern Architecture Layout (v3.0.0)
+
+Agents reside in flat, atomic directories under `agents/<agent-id>/`:
 
 ```
 agents/
-├── universal_core_system/
-│   └── de/
-│       └── default/
-├── software_engineering_craft/
-│   └── co/
-│       └── coder-specialist/
-├── devops_infrastructure/
-│   └── de/
-│       └── devops-engineer/
-├── quality_assurance/
-│   └── qa/
-│       └── qa-engineer/
-├── product_strategy/
-│   └── pr/
-│       └── product-manager/
-├── design_systems/
-│   └── ui/
-│       └── uiux-designer/
-├── technical_documentation/
-│   └── te/
-│       └── tech-writer/
-├── release_operations/
-│   └── re/
-│       └── release-manager/
-├── security_reverse_engineering/
-│   └── re/
-│       └── reverse-engineer/
-└── agent_architecture/
-    └── ag/
-        └── agent_creator/
+├── default/               # Universal Core Sovereign Engine & Master Orchestrator (CAT-015)
+├── coder-specialist/      # Software Engineering & Deep Modules Craftsman (CAT-005)
+├── code-auditor/          # Clean Code & Security Sanitization Reviewer (CAT-005)
+├── database-architect/    # Database Architecture & Query Optimization Specialist (CAT-005)
+├── api-integrator/        # Resilient Webhooks & API Integration Specialist (CAT-005)
+├── qa-engineer/           # Quality Assurance & Playwright E2E Automation (CAT-005)
+├── devops-engineer/       # Docker, K8s & Multi-OS CI/CD Infrastructure (CAT-005)
+├── release-manager/       # SemVer Changelog & Rollout Release Gatekeeper (CAT-005)
+├── uiux-designer/         # UI/UX & Flowork CSS Design System Architect (CAT-011)
+├── product-manager/       # Product Discovery & DAG Task Graph Architect (CAT-007)
+├── tech-writer/           # Diátaxis Framework & OpenAPI Technical Writer (CAT-005)
+├── system/                # System Triggers & Operational Runbooks
+├── SKILL.MD               # Master Operational Standard & 4-Layer Prompt Pyramid
+└── trigger.md             # Sovereign Agent Router & Dispatch Specification
 ```
+
+Each atomic agent directory adheres to:
+- `agent.json` — Formal manifest with official `category_id`, tool permissions, and metadata
+- `00_fl_identity.md` (or `00_identity.md`) — Foundational mental model & domain heuristics (<= 40 lines)
+- `rules.md` — Lean reason dispatch table + negative guardrails (<= 40 lines)
+- `performance.md` — Quantitative KPI benchmarks
+- `01_...md`, `02_...md` — On-demand modular runbooks (0 token cost when inactive)
 
 ---
 
@@ -58,11 +51,5 @@ In the Flowork OS terminal or via LLM tool calls:
 - Search: `agent_control(action: "search", query: "coder")`
 - Pin: `agent_control(action: "pin", agent_id: "coder-specialist")`
 - Unpin: `agent_control(action: "unpin")`
-- Status: `agent_control(action: "status")`
 
----
-
-## 📄 License & Attribution
-
-Governed by Flowork OS Sovereign Architecture.
-Co-authored-by: Flowork OS <agent@floworkos.com>
+<!-- Co-authored-by: Flowork OS <agent@floworkos.com> -->
