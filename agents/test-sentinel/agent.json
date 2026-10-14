@@ -1,0 +1,25 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "allowed_tools": [
+    "*"
+  ],
+  "author": "anonymous",
+  "category": "technology",
+  "category_id": "CAT-005",
+  "created_at": "2026-10-14 16:22:11",
+  "default_tools": [
+    "run_command",
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "ask_question",
+    "search_web",
+    "read_url_content"
+  ],
+  "description": "Test sentinel agent for lifecycle verification",
+  "id": "test-sentinel",
+  "name": "Sentinel Test Bot",
+  "owner": "anonymous",
+  "schema_version": "2.0.0",
+  "version": "1.0.0"
+}
