@@ -1,26 +1,15 @@
 {
   "$schema": "https://floworkos.com/schemas/agent-registry.v2.json",
-  "version": "2.0.0",
-  "repo": "flowork-os/AGENTS",
-  "description": "Official Flowork OS Sovereign Agent Registry (Modern 4-Layer Zero-Bloat Architecture v3.0.0)",
   "agents": [
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "default",
       "agent_id": "agent-mrflow-core-01",
-      "name": "Mr. Flow (Core Sovereign Engine)",
+      "allowed_tools": [
+        "*"
+      ],
       "author": "flowork",
-      "owner": "flowork",
       "category": "universal_core_system",
       "category_id": "CAT-015",
-      "department": "engineering",
-      "description": "Universal Core Sovereign Intelligence & Micro-Kernel of Flowork OS: pure binary execution, sovereign tools, and system orchestration.",
-      "icon": "⭐",
-      "is_default": true,
-      "version": "1.0.130",
-      "schema_version": "2.0.0",
-      "priority": 100,
-      "source_path": "agents/default",
       "default_tools": [
         "run_command",
         "view_file",
@@ -31,6 +20,30 @@
         "read_url_content",
         "team_dispatch"
       ],
+      "department": "engineering",
+      "description": "Universal Core Sovereign Intelligence & Micro-Kernel of Flowork OS: pure binary execution, sovereign tools, and system orchestration.",
+      "desk_preference": {
+        "avatar_mesh": "procedural_core_orchestrator",
+        "coordinates": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "desk_id": "desk-mrflow-core",
+        "desk_props": [
+          "holographic_core_globe",
+          "status_beacons",
+          "master_terminal"
+        ],
+        "rotation_y": 0,
+        "zone": "Command Center"
+      },
+      "exclude_file_patterns": [],
+      "exclude_keywords": [],
+      "file_patterns": [],
+      "icon": "⭐",
+      "id": "default",
+      "is_default": true,
       "keywords": [
         "core",
         "universal_core_system",
@@ -53,29 +66,14 @@
         "runbook_execution",
         "flowork_os"
       ],
-      "file_patterns": [],
-      "exclude_file_patterns": [],
-      "exclude_keywords": [],
-      "slash_commands": [],
-      "desk_preference": {
-        "avatar_mesh": "procedural_core_orchestrator",
-        "coordinates": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "desk_id": "desk-mrflow-core",
-        "desk_props": [
-          "holographic_core_globe",
-          "status_beacons",
-          "master_terminal"
-        ],
-        "rotation_y": 0,
-        "zone": "Command Center"
+      "name": "Mr. Flow (Core Sovereign Engine)",
+      "owner": "flowork",
+      "pinned_account": {
+        "account_id": "combo",
+        "isolated_profile": false,
+        "pool_strategy": "combo",
+        "required_tier": "free"
       },
-      "allowed_tools": [
-        "*"
-      ],
       "pinned_model": {
         "enforce_lock": false,
         "fallback_model_id": "gemini-2.5-pro",
@@ -83,30 +81,18 @@
         "provider": "google",
         "temperature": 0.3
       },
-      "pinned_account": {
-        "account_id": "combo",
-        "isolated_profile": false,
-        "pool_strategy": "combo",
-        "required_tier": "free"
-      }
+      "priority": 100,
+      "schema_version": "2.0.0",
+      "slash_commands": [],
+      "source_path": "agents/default",
+      "version": "1.0.130"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "coder-specialist",
       "agent_id": "agent-coder-specialist-01",
-      "name": "Sovereign Coder Specialist & Systems Craftsman",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "software_engineering_craft",
       "category_id": "CAT-005",
-      "department": "engineering",
-      "description": "High-discipline software engineering specialist enforcing Ousterhout deep modules, empirical red-green TDD, frontier alignment, DAG task graphs, two-axis independent code review, git safety guardrails, skeptical challenge, and physical Exit Code 0 verification.",
-      "icon": "⚡",
-      "is_default": false,
-      "version": "1.0.17",
-      "schema_version": "2.0.0",
-      "priority": 95,
-      "source_path": "agents/coder-specialist",
       "default_tools": [
         "run_command",
         "view_file",
@@ -124,47 +110,12 @@
         "fl_git_guardrails",
         "fl_prototype_harness"
       ],
-      "keywords": [
-        "coder specialist",
-        "software craftsman",
-        "deep module",
-        "ousterhout",
-        "seam architecture",
-        "red green tdd",
-        "tracer bullet",
-        "frontier alignment",
-        "dag task graph",
-        "two axis review",
-        "fowler smells",
-        "git guardrails",
-        "skeptical challenge",
-        "worktree orchestration",
-        "issue triage",
-        "domain modeling",
-        "adr",
-        "diagnose",
-        "exit code 0",
-        "pit of success"
-      ],
-      "file_patterns": [
-        "*.ts",
-        "*.tsx",
-        "*.rs",
-        "*.go",
-        "*.py",
-        "*.js",
-        "*.jsx",
-        "*.c",
-        "*.cpp",
-        "*.h",
-        "Cargo.toml",
-        "package.json",
-        "go.mod",
-        "Makefile",
-        "GLOSSARY.md",
-        "docs/adr/**",
-        ".out-of-scope/**"
-      ],
+      "department": "engineering",
+      "description": "High-discipline software engineering specialist enforcing Ousterhout deep modules, empirical red-green TDD, frontier alignment, DAG task graphs, two-axis independent code review, git safety guardrails, skeptical challenge, and physical Exit Code 0 verification.",
+      "desk_preference": {
+        "desk_id": "desk-coder-specialist",
+        "zone": "Engineering Pod"
+      },
       "exclude_file_patterns": [
         "*.css",
         "styles/**",
@@ -193,6 +144,63 @@
         "gui layout",
         "visual theme"
       ],
+      "file_patterns": [
+        "*.ts",
+        "*.tsx",
+        "*.rs",
+        "*.go",
+        "*.py",
+        "*.js",
+        "*.jsx",
+        "*.c",
+        "*.cpp",
+        "*.h",
+        "Cargo.toml",
+        "package.json",
+        "go.mod",
+        "Makefile",
+        "GLOSSARY.md",
+        "docs/adr/**",
+        ".out-of-scope/**"
+      ],
+      "icon": "⚡",
+      "id": "coder-specialist",
+      "is_default": false,
+      "keywords": [
+        "coder specialist",
+        "software craftsman",
+        "deep module",
+        "ousterhout",
+        "seam architecture",
+        "red green tdd",
+        "tracer bullet",
+        "frontier alignment",
+        "dag task graph",
+        "two axis review",
+        "fowler smells",
+        "git guardrails",
+        "skeptical challenge",
+        "worktree orchestration",
+        "issue triage",
+        "domain modeling",
+        "adr",
+        "diagnose",
+        "exit code 0",
+        "pit of success"
+      ],
+      "name": "Sovereign Coder Specialist & Systems Craftsman",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "combo",
+        "pool_strategy": "combo"
+      },
+      "pinned_model": {
+        "enforce_lock": false,
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google"
+      },
+      "priority": 95,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/fl-align",
@@ -285,37 +293,15 @@
           "icon": "✅"
         }
       ],
-      "desk_preference": {
-        "desk_id": "desk-coder-specialist",
-        "zone": "Engineering Pod"
-      },
-      "pinned_model": {
-        "enforce_lock": false,
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google"
-      },
-      "pinned_account": {
-        "account_id": "combo",
-        "pool_strategy": "combo"
-      }
+      "source_path": "agents/coder-specialist",
+      "version": "1.0.17"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "code-auditor",
       "agent_id": "agent-code-auditor-01",
-      "name": "Sovereign Code Auditor & Clean Architecture Reviewer",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "software_engineering_craft",
       "category_id": "CAT-005",
-      "department": "engineering",
-      "description": "Rigorous code quality, security, and clean architecture auditor modeled after Robert C. Martin's Clean Code (clean-code-javascript) and Semgrep static analysis standards. Performs two-axis code reviews, cyclomatic complexity reduction, hardcoded path/secret detection, dead code eradication, and input sanitization audits.",
-      "icon": "🔍",
-      "is_default": false,
-      "version": "1.0.0",
-      "schema_version": "2.0.0",
-      "priority": 93,
-      "source_path": "agents/code-auditor",
       "default_tools": [
         "run_command",
         "view_file",
@@ -328,6 +314,36 @@
         "detect_hardcode",
         "ask_question"
       ],
+      "department": "engineering",
+      "description": "Rigorous code quality, security, and clean architecture auditor modeled after Robert C. Martin's Clean Code (clean-code-javascript) and Semgrep static analysis standards. Performs two-axis code reviews, cyclomatic complexity reduction, hardcoded path/secret detection, dead code eradication, and input sanitization audits.",
+      "desk_preference": {},
+      "exclude_file_patterns": [
+        "*.png",
+        "*.jpg",
+        "*.svg",
+        "*.pdf",
+        "*.bin"
+      ],
+      "exclude_keywords": [
+        "trading crypto",
+        "stock market",
+        "forex",
+        "figma vector"
+      ],
+      "file_patterns": [
+        "*.ts",
+        "*.tsx",
+        "*.rs",
+        "*.go",
+        "*.py",
+        "*.js",
+        "*.jsx",
+        "*.c",
+        "*.cpp"
+      ],
+      "icon": "🔍",
+      "id": "code-auditor",
+      "is_default": false,
       "keywords": [
         "code auditor",
         "clean code",
@@ -350,30 +366,10 @@
         "code quality",
         "exit code 0"
       ],
-      "file_patterns": [
-        "*.ts",
-        "*.tsx",
-        "*.rs",
-        "*.go",
-        "*.py",
-        "*.js",
-        "*.jsx",
-        "*.c",
-        "*.cpp"
-      ],
-      "exclude_file_patterns": [
-        "*.png",
-        "*.jpg",
-        "*.svg",
-        "*.pdf",
-        "*.bin"
-      ],
-      "exclude_keywords": [
-        "trading crypto",
-        "stock market",
-        "forex",
-        "figma vector"
-      ],
+      "name": "Sovereign Code Auditor & Clean Architecture Reviewer",
+      "owner": "awenkaudico",
+      "priority": 93,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/code-audit",
@@ -391,25 +387,15 @@
           "icon": "🛡️"
         }
       ],
-      "desk_preference": {}
+      "source_path": "agents/code-auditor",
+      "version": "1.0.0"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "database-architect",
       "agent_id": "agent-database-architect-01",
-      "name": "Sovereign Database Architect & Data Engine Specialist",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "software_engineering_craft",
       "category_id": "CAT-005",
-      "department": "engineering",
-      "description": "High-performance database architect modeled after Ariga Atlas and Bytebase standards. Specializes in declarative/versioned schema migrations, zero-downtime expand-contract schema evolution, SQLite WAL concurrency, B-Tree index optimization, query execution plan forensics, and ACID transaction safety.",
-      "icon": "🗄️",
-      "is_default": false,
-      "version": "1.0.0",
-      "schema_version": "2.0.0",
-      "priority": 94,
-      "source_path": "agents/database-architect",
       "default_tools": [
         "run_command",
         "view_file",
@@ -420,6 +406,35 @@
         "search_tools",
         "ask_question"
       ],
+      "department": "engineering",
+      "description": "High-performance database architect modeled after Ariga Atlas and Bytebase standards. Specializes in declarative/versioned schema migrations, zero-downtime expand-contract schema evolution, SQLite WAL concurrency, B-Tree index optimization, query execution plan forensics, and ACID transaction safety.",
+      "desk_preference": {},
+      "exclude_file_patterns": [
+        "*.css",
+        "*.svg",
+        "*.html",
+        "ui/**"
+      ],
+      "exclude_keywords": [
+        "frontend styling",
+        "css animation",
+        "figma design",
+        "marketing campaign"
+      ],
+      "file_patterns": [
+        "*.sql",
+        "schema.prisma",
+        "migrations/**",
+        "*.hcl",
+        "db/**",
+        "database/**",
+        "*.sqlite",
+        "*.sqlite3",
+        "*.db"
+      ],
+      "icon": "🗄️",
+      "id": "database-architect",
+      "is_default": false,
       "keywords": [
         "database architect",
         "schema migration",
@@ -442,29 +457,10 @@
         "deadlock prevention",
         "exit code 0"
       ],
-      "file_patterns": [
-        "*.sql",
-        "schema.prisma",
-        "migrations/**",
-        "*.hcl",
-        "db/**",
-        "database/**",
-        "*.sqlite",
-        "*.sqlite3",
-        "*.db"
-      ],
-      "exclude_file_patterns": [
-        "*.css",
-        "*.svg",
-        "*.html",
-        "ui/**"
-      ],
-      "exclude_keywords": [
-        "frontend styling",
-        "css animation",
-        "figma design",
-        "marketing campaign"
-      ],
+      "name": "Sovereign Database Architect & Data Engine Specialist",
+      "owner": "awenkaudico",
+      "priority": 94,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/db-migrate",
@@ -482,25 +478,15 @@
           "icon": "🛡️"
         }
       ],
-      "desk_preference": {}
+      "source_path": "agents/database-architect",
+      "version": "1.0.0"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "api-integrator",
       "agent_id": "agent-api-integrator-01",
-      "name": "Sovereign API Integrator & Webhook Specialist",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "software_engineering_craft",
       "category_id": "CAT-005",
-      "department": "engineering",
-      "description": "High-reliability external API integration and webhook specialist modeled after Svix webhook standards and Hoppscotch API design. Specializes in cryptographic HMAC webhook verification, exponential backoff with jitter retry algorithms, idempotency key processing, circuit breakers, and OpenAPI/gRPC schema contract validation.",
-      "icon": "🔌",
-      "is_default": false,
-      "version": "1.0.0",
-      "schema_version": "2.0.0",
-      "priority": 92,
-      "source_path": "agents/api-integrator",
       "default_tools": [
         "run_command",
         "view_file",
@@ -513,6 +499,35 @@
         "search_tools",
         "ask_question"
       ],
+      "department": "engineering",
+      "description": "High-reliability external API integration and webhook specialist modeled after Svix webhook standards and Hoppscotch API design. Specializes in cryptographic HMAC webhook verification, exponential backoff with jitter retry algorithms, idempotency key processing, circuit breakers, and OpenAPI/gRPC schema contract validation.",
+      "desk_preference": {},
+      "exclude_file_patterns": [
+        "*.css",
+        "*.svg",
+        "*.png",
+        "design/**"
+      ],
+      "exclude_keywords": [
+        "forex trading",
+        "crypto trading",
+        "figma animation",
+        "color palette"
+      ],
+      "file_patterns": [
+        "*api*",
+        "*webhook*",
+        "*client*",
+        "*service*",
+        "*.proto",
+        "openapi*.json",
+        "openapi*.yaml",
+        "swagger*.json",
+        "routes/api/**"
+      ],
+      "icon": "🔌",
+      "id": "api-integrator",
+      "is_default": false,
       "keywords": [
         "api integrator",
         "webhooks",
@@ -535,29 +550,10 @@
         "contract testing",
         "exit code 0"
       ],
-      "file_patterns": [
-        "*api*",
-        "*webhook*",
-        "*client*",
-        "*service*",
-        "*.proto",
-        "openapi*.json",
-        "openapi*.yaml",
-        "swagger*.json",
-        "routes/api/**"
-      ],
-      "exclude_file_patterns": [
-        "*.css",
-        "*.svg",
-        "*.png",
-        "design/**"
-      ],
-      "exclude_keywords": [
-        "forex trading",
-        "crypto trading",
-        "figma animation",
-        "color palette"
-      ],
+      "name": "Sovereign API Integrator & Webhook Specialist",
+      "owner": "awenkaudico",
+      "priority": 92,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/api-integrate",
@@ -575,58 +571,36 @@
           "icon": "📜"
         }
       ],
-      "desk_preference": {}
+      "source_path": "agents/api-integrator",
+      "version": "1.0.0"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "qa-engineer",
       "agent_id": "agent-qa-01",
-      "name": "QA Engineer & Test Automation Specialist",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "quality_assurance",
       "category_id": "CAT-005",
+      "default_tools": [],
       "department": "engineering",
       "description": "Quality assurance specialist enforcing two-axis code reviews, Playwright E2E browser automation, public seam TDD, boundary fuzzing, and zero-defect Exit Code 0 verification.",
-      "icon": "🧪",
-      "is_default": false,
-      "version": "1.0.14",
-      "schema_version": "2.0.0",
-      "priority": 91,
-      "source_path": "agents/qa-engineer",
-      "default_tools": [],
-      "keywords": [
-        "test",
-        "testing",
-        "qa",
-        "e2e",
-        "playwright",
-        "cypress",
-        "tdd",
-        "unit",
-        "integration",
-        "regression",
-        "fuzzing",
-        "coverage",
-        "assertion",
-        "smell",
-        "flaky",
-        "mock",
-        "seam",
-        "review",
-        "spec",
-        "verification"
-      ],
-      "file_patterns": [
-        "*test*.*",
-        "*spec*.*",
-        "tests/**",
-        "e2e/**",
-        "playwright.config.*",
-        "cypress.config.*",
-        "vitest.config.*",
-        "jest.config.*"
-      ],
+      "desk_preference": {
+        "active_animation": "executing_regression",
+        "avatar_mesh": "procedural_qa_specialist",
+        "coordinates": {
+          "x": -16,
+          "y": 0,
+          "z": -8.5
+        },
+        "desk_id": "desk-qa-engineer",
+        "desk_props": [
+          "test_matrix_display",
+          "status_beacons",
+          "bug_tracker_terminal"
+        ],
+        "idle_animation": "monitoring_test_suite",
+        "rotation_y": -90,
+        "zone": "QA & Verification Deck"
+      },
       "exclude_file_patterns": [],
       "exclude_keywords": [
         "frontend styling",
@@ -655,6 +629,59 @@
         "binance",
         "metatrader"
       ],
+      "file_patterns": [
+        "*test*.*",
+        "*spec*.*",
+        "tests/**",
+        "e2e/**",
+        "playwright.config.*",
+        "cypress.config.*",
+        "vitest.config.*",
+        "jest.config.*"
+      ],
+      "icon": "🧪",
+      "id": "qa-engineer",
+      "is_default": false,
+      "keywords": [
+        "test",
+        "testing",
+        "qa",
+        "e2e",
+        "playwright",
+        "cypress",
+        "tdd",
+        "unit",
+        "integration",
+        "regression",
+        "fuzzing",
+        "coverage",
+        "assertion",
+        "smell",
+        "flaky",
+        "mock",
+        "seam",
+        "review",
+        "spec",
+        "verification"
+      ],
+      "name": "QA Engineer & Test Automation Specialist",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "acc-qa-corp-01",
+        "email": "qa@floworkos.com",
+        "isolated_profile": true,
+        "pool_strategy": "pinned",
+        "required_tier": "pro"
+      },
+      "pinned_model": {
+        "enforce_lock": true,
+        "fallback_model_id": "claude-sonnet-4-6",
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google",
+        "temperature": 0.2
+      },
+      "priority": 91,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/verify",
@@ -682,89 +709,36 @@
           "icon": "💥"
         }
       ],
-      "desk_preference": {
-        "active_animation": "executing_regression",
-        "avatar_mesh": "procedural_qa_specialist",
-        "coordinates": {
-          "x": -16,
-          "y": 0,
-          "z": -8.5
-        },
-        "desk_id": "desk-qa-engineer",
-        "desk_props": [
-          "test_matrix_display",
-          "status_beacons",
-          "bug_tracker_terminal"
-        ],
-        "idle_animation": "monitoring_test_suite",
-        "rotation_y": -90,
-        "zone": "QA & Verification Deck"
-      },
-      "pinned_model": {
-        "enforce_lock": true,
-        "fallback_model_id": "claude-sonnet-4-6",
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google",
-        "temperature": 0.2
-      },
-      "pinned_account": {
-        "account_id": "acc-qa-corp-01",
-        "email": "qa@floworkos.com",
-        "isolated_profile": true,
-        "pool_strategy": "pinned",
-        "required_tier": "pro"
-      }
+      "source_path": "agents/qa-engineer",
+      "version": "1.0.14"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "devops-engineer",
       "agent_id": "agent-devops-01",
-      "name": "DevOps & Cloud Infrastructure Architect",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "devops_infrastructure",
       "category_id": "CAT-005",
+      "default_tools": [],
       "department": "engineering",
       "description": "Infrastructure engineer specialized in CI/CD pipelines, Docker containerization, Kubernetes orchestration, system health monitoring, and zero-downtime deployments.",
-      "icon": "☁️",
-      "is_default": false,
-      "version": "1.0.14",
-      "schema_version": "2.0.0",
-      "priority": 92,
-      "source_path": "agents/devops-engineer",
-      "default_tools": [],
-      "keywords": [
-        "docker",
-        "kubernetes",
-        "k8s",
-        "container",
-        "ci/cd",
-        "pipeline",
-        "infrastructure",
-        "terraform",
-        "helm",
-        "systemd",
-        "healthcheck",
-        "nginx",
-        "deploy",
-        "devops",
-        "iac",
-        "ansible",
-        "observability",
-        "cluster",
-        "daemon",
-        "cloud"
-      ],
-      "file_patterns": [
-        "Dockerfile*",
-        "docker-compose*.yml",
-        ".github/workflows/**",
-        "*.tf",
-        "k8s/**",
-        "helm/**",
-        "nginx.conf",
-        "systemd/**"
-      ],
+      "desk_preference": {
+        "active_animation": "deploying_pipeline",
+        "avatar_mesh": "procedural_devops_architect",
+        "coordinates": {
+          "x": 16,
+          "y": 0,
+          "z": -8.5
+        },
+        "desk_id": "desk-devops-engineer",
+        "desk_props": [
+          "terminal_dashboard",
+          "status_led_tower",
+          "cloud_monitor"
+        ],
+        "idle_animation": "monitoring_cluster",
+        "rotation_y": 90,
+        "zone": "DevOps & Cloud Deck"
+      },
       "exclude_file_patterns": [],
       "exclude_keywords": [
         "frontend styling",
@@ -793,6 +767,59 @@
         "binance",
         "metatrader"
       ],
+      "file_patterns": [
+        "Dockerfile*",
+        "docker-compose*.yml",
+        ".github/workflows/**",
+        "*.tf",
+        "k8s/**",
+        "helm/**",
+        "nginx.conf",
+        "systemd/**"
+      ],
+      "icon": "☁️",
+      "id": "devops-engineer",
+      "is_default": false,
+      "keywords": [
+        "docker",
+        "kubernetes",
+        "k8s",
+        "container",
+        "ci/cd",
+        "pipeline",
+        "infrastructure",
+        "terraform",
+        "helm",
+        "systemd",
+        "healthcheck",
+        "nginx",
+        "deploy",
+        "devops",
+        "iac",
+        "ansible",
+        "observability",
+        "cluster",
+        "daemon",
+        "cloud"
+      ],
+      "name": "DevOps & Cloud Infrastructure Architect",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "acc-devops-corp-01",
+        "email": "devops@floworkos.com",
+        "isolated_profile": true,
+        "pool_strategy": "pinned",
+        "required_tier": "pro"
+      },
+      "pinned_model": {
+        "enforce_lock": true,
+        "fallback_model_id": "claude-sonnet-4-6",
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google",
+        "temperature": 0.2
+      },
+      "priority": 92,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/dockerize",
@@ -820,56 +847,15 @@
           "icon": "🏗️"
         }
       ],
-      "desk_preference": {
-        "active_animation": "deploying_pipeline",
-        "avatar_mesh": "procedural_devops_architect",
-        "coordinates": {
-          "x": 16,
-          "y": 0,
-          "z": -8.5
-        },
-        "desk_id": "desk-devops-engineer",
-        "desk_props": [
-          "terminal_dashboard",
-          "status_led_tower",
-          "cloud_monitor"
-        ],
-        "idle_animation": "monitoring_cluster",
-        "rotation_y": 90,
-        "zone": "DevOps & Cloud Deck"
-      },
-      "pinned_model": {
-        "enforce_lock": true,
-        "fallback_model_id": "claude-sonnet-4-6",
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google",
-        "temperature": 0.2
-      },
-      "pinned_account": {
-        "account_id": "acc-devops-corp-01",
-        "email": "devops@floworkos.com",
-        "isolated_profile": true,
-        "pool_strategy": "pinned",
-        "required_tier": "pro"
-      }
+      "source_path": "agents/devops-engineer",
+      "version": "1.0.14"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "release-manager",
       "agent_id": "agent-release-01",
-      "name": "Release Manager & Packaging Specialist",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "release_operations",
       "category_id": "CAT-005",
-      "department": "engineering",
-      "description": "Release operations specialist managing Semantic Versioning, automated changelogs, Agile-V preflight release gates, progressive canary rollouts, and cryptographic artifact provenance.",
-      "icon": "🚀",
-      "is_default": false,
-      "version": "1.0.12",
-      "schema_version": "2.0.0",
-      "priority": 93,
-      "source_path": "agents/release-manager",
       "default_tools": [
         "run_command",
         "view_file",
@@ -877,6 +863,37 @@
         "replace_file_content",
         "ask_question"
       ],
+      "department": "engineering",
+      "description": "Release operations specialist managing Semantic Versioning, automated changelogs, Agile-V preflight release gates, progressive canary rollouts, and cryptographic artifact provenance.",
+      "desk_preference": {
+        "desk_id": "desk-release-manager",
+        "zone": "Release & Operations Deck"
+      },
+      "exclude_file_patterns": [],
+      "exclude_keywords": [
+        "forex",
+        "trading crypto",
+        "seo marketing",
+        "youtube channel",
+        "music production",
+        "frontend styling",
+        "raw assembly",
+        "kernel panic"
+      ],
+      "file_patterns": [
+        "CHANGELOG.md",
+        "VERSION",
+        "package.json",
+        "Cargo.toml",
+        "release_checksums.json",
+        "dist/**",
+        "build/**",
+        "release/**",
+        "deploy/**"
+      ],
+      "icon": "🚀",
+      "id": "release-manager",
+      "is_default": false,
       "keywords": [
         "release manager",
         "packaging specialist",
@@ -899,28 +916,19 @@
         "slsa provenance",
         "multi manifest sync"
       ],
-      "file_patterns": [
-        "CHANGELOG.md",
-        "VERSION",
-        "package.json",
-        "Cargo.toml",
-        "release_checksums.json",
-        "dist/**",
-        "build/**",
-        "release/**",
-        "deploy/**"
-      ],
-      "exclude_file_patterns": [],
-      "exclude_keywords": [
-        "forex",
-        "trading crypto",
-        "seo marketing",
-        "youtube channel",
-        "music production",
-        "frontend styling",
-        "raw assembly",
-        "kernel panic"
-      ],
+      "name": "Release Manager & Packaging Specialist",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "combo",
+        "pool_strategy": "combo"
+      },
+      "pinned_model": {
+        "enforce_lock": false,
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google"
+      },
+      "priority": 93,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/release",
@@ -948,37 +956,15 @@
           "icon": "⏪"
         }
       ],
-      "desk_preference": {
-        "desk_id": "desk-release-manager",
-        "zone": "Release & Operations Deck"
-      },
-      "pinned_model": {
-        "enforce_lock": false,
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google"
-      },
-      "pinned_account": {
-        "account_id": "combo",
-        "pool_strategy": "combo"
-      }
+      "source_path": "agents/release-manager",
+      "version": "1.0.12"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "uiux-designer",
       "agent_id": "agent-uiux-01",
-      "name": "UI/UX & Design Systems Architect",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "design_systems",
       "category_id": "CAT-011",
-      "department": "design",
-      "description": "Design systems specialist crafting responsive layouts, design tokens, micro-interactions, accessibility hierarchies, dark mode ergonomics, and clean Flowork CSS architectures.",
-      "icon": "🎨",
-      "is_default": false,
-      "version": "1.0.14",
-      "schema_version": "2.0.0",
-      "priority": 91,
-      "source_path": "agents/uiux-designer",
       "default_tools": [
         "view_file",
         "write_to_file",
@@ -988,6 +974,36 @@
         "ask_question",
         "fl_prototype_harness"
       ],
+      "department": "design",
+      "description": "Design systems specialist crafting responsive layouts, design tokens, micro-interactions, accessibility hierarchies, dark mode ergonomics, and clean Flowork CSS architectures.",
+      "desk_preference": {
+        "desk_id": "desk-uiux-designer",
+        "zone": "Creative Hub"
+      },
+      "exclude_file_patterns": [],
+      "exclude_keywords": [
+        "kernel panic",
+        "assembly",
+        "hex dump",
+        "decompilation",
+        "forex valas",
+        "database migration",
+        "kubernetes cluster",
+        "docker daemon"
+      ],
+      "file_patterns": [
+        "*.css",
+        "*.html",
+        "*.svg",
+        "styles/**",
+        "design/**",
+        "tokens/**",
+        "assets/**",
+        "canvas-ui/**"
+      ],
+      "icon": "🎨",
+      "id": "uiux-designer",
+      "is_default": false,
       "keywords": [
         "ui designer",
         "ux architect",
@@ -1010,27 +1026,19 @@
         "anti ai slop",
         "glassmorphism"
       ],
-      "file_patterns": [
-        "*.css",
-        "*.html",
-        "*.svg",
-        "styles/**",
-        "design/**",
-        "tokens/**",
-        "assets/**",
-        "canvas-ui/**"
-      ],
-      "exclude_file_patterns": [],
-      "exclude_keywords": [
-        "kernel panic",
-        "assembly",
-        "hex dump",
-        "decompilation",
-        "forex valas",
-        "database migration",
-        "kubernetes cluster",
-        "docker daemon"
-      ],
+      "name": "UI/UX & Design Systems Architect",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "combo",
+        "pool_strategy": "combo"
+      },
+      "pinned_model": {
+        "enforce_lock": false,
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google"
+      },
+      "priority": 91,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/tokens",
@@ -1058,37 +1066,15 @@
           "icon": "🔬"
         }
       ],
-      "desk_preference": {
-        "desk_id": "desk-uiux-designer",
-        "zone": "Creative Hub"
-      },
-      "pinned_model": {
-        "enforce_lock": false,
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google"
-      },
-      "pinned_account": {
-        "account_id": "combo",
-        "pool_strategy": "combo"
-      }
+      "source_path": "agents/uiux-designer",
+      "version": "1.0.14"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "product-manager",
       "agent_id": "agent-pm-01",
-      "name": "Product Manager & Requirements Architect",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "product_strategy",
       "category_id": "CAT-007",
-      "department": "product",
-      "description": "Product strategist specializing in PRD synthesis, market requirements decomposition, user story mapping, backlog triage, and feature acceptance criteria.",
-      "icon": "📋",
-      "is_default": false,
-      "version": "1.0.14",
-      "schema_version": "2.0.0",
-      "priority": 94,
-      "source_path": "agents/product-manager",
       "default_tools": [
         "ask_question",
         "view_file",
@@ -1097,6 +1083,35 @@
         "search_web",
         "run_command"
       ],
+      "department": "product",
+      "description": "Product strategist specializing in PRD synthesis, market requirements decomposition, user story mapping, backlog triage, and feature acceptance criteria.",
+      "desk_preference": {
+        "desk_id": "desk-product-manager",
+        "zone": "Core Wing"
+      },
+      "exclude_file_patterns": [],
+      "exclude_keywords": [
+        "kernel panic",
+        "reverse engineering",
+        "assembly",
+        "disassembly",
+        "css flexbox",
+        "hex dump",
+        "buffer overflow",
+        "forex",
+        "crypto trading"
+      ],
+      "file_patterns": [
+        "*.md",
+        "PRD.md",
+        "ROADMAP.md",
+        "BACKLOG.md",
+        "specs/**",
+        "product/**"
+      ],
+      "icon": "📋",
+      "id": "product-manager",
+      "is_default": false,
       "keywords": [
         "product",
         "prd",
@@ -1119,26 +1134,19 @@
         "rice matrix",
         "ubiquitous language"
       ],
-      "file_patterns": [
-        "*.md",
-        "PRD.md",
-        "ROADMAP.md",
-        "BACKLOG.md",
-        "specs/**",
-        "product/**"
-      ],
-      "exclude_file_patterns": [],
-      "exclude_keywords": [
-        "kernel panic",
-        "reverse engineering",
-        "assembly",
-        "disassembly",
-        "css flexbox",
-        "hex dump",
-        "buffer overflow",
-        "forex",
-        "crypto trading"
-      ],
+      "name": "Product Manager & Requirements Architect",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "combo",
+        "pool_strategy": "combo"
+      },
+      "pinned_model": {
+        "enforce_lock": false,
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google"
+      },
+      "priority": 94,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/interview",
@@ -1166,37 +1174,15 @@
           "icon": "🛡️"
         }
       ],
-      "desk_preference": {
-        "desk_id": "desk-product-manager",
-        "zone": "Core Wing"
-      },
-      "pinned_model": {
-        "enforce_lock": false,
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google"
-      },
-      "pinned_account": {
-        "account_id": "combo",
-        "pool_strategy": "combo"
-      }
+      "source_path": "agents/product-manager",
+      "version": "1.0.14"
     },
     {
       "$schema": "https://floworkos.com/schemas/agent.v2.json",
-      "id": "tech-writer",
       "agent_id": "agent-tech-writer-01",
-      "name": "Technical Writer & Documentation Architect",
       "author": "awenkaudico",
-      "owner": "awenkaudico",
       "category": "technical_documentation",
       "category_id": "CAT-005",
-      "department": "documentation",
-      "description": "Documentation architect crafting Diátaxis-compliant developer guides, OpenAPI specifications, blueprint READMEs, runnable troubleshooting runbooks, and architectural walk-throughs.",
-      "icon": "📖",
-      "is_default": false,
-      "version": "1.0.14",
-      "schema_version": "2.0.0",
-      "priority": 91,
-      "source_path": "agents/tech-writer",
       "default_tools": [
         "view_file",
         "write_to_file",
@@ -1205,6 +1191,37 @@
         "search_web",
         "ask_question"
       ],
+      "department": "documentation",
+      "description": "Documentation architect crafting Diátaxis-compliant developer guides, OpenAPI specifications, blueprint READMEs, runnable troubleshooting runbooks, and architectural walk-throughs.",
+      "desk_preference": {
+        "desk_id": "desk-tech-writer",
+        "zone": "Creative Hub"
+      },
+      "exclude_file_patterns": [],
+      "exclude_keywords": [
+        "forex",
+        "trading crypto",
+        "stock market",
+        "scalping",
+        "raw assembly",
+        "kernel panic",
+        "disassembly",
+        "reverse engineering"
+      ],
+      "file_patterns": [
+        "*.md",
+        "docs/**",
+        "documentation/**",
+        "README.md",
+        "CHANGELOG.md",
+        "docs/adr/**",
+        "openapi*.json",
+        "openapi*.yaml",
+        "swagger*.json"
+      ],
+      "icon": "📖",
+      "id": "tech-writer",
+      "is_default": false,
       "keywords": [
         "technical writer",
         "documentation architect",
@@ -1227,28 +1244,19 @@
         "progressive disclosure",
         "markdown linting"
       ],
-      "file_patterns": [
-        "*.md",
-        "docs/**",
-        "documentation/**",
-        "README.md",
-        "CHANGELOG.md",
-        "docs/adr/**",
-        "openapi*.json",
-        "openapi*.yaml",
-        "swagger*.json"
-      ],
-      "exclude_file_patterns": [],
-      "exclude_keywords": [
-        "forex",
-        "trading crypto",
-        "stock market",
-        "scalping",
-        "raw assembly",
-        "kernel panic",
-        "disassembly",
-        "reverse engineering"
-      ],
+      "name": "Technical Writer & Documentation Architect",
+      "owner": "awenkaudico",
+      "pinned_account": {
+        "account_id": "combo",
+        "pool_strategy": "combo"
+      },
+      "pinned_model": {
+        "enforce_lock": false,
+        "model_id": "gemini-3.8-flash-high",
+        "provider": "google"
+      },
+      "priority": 91,
+      "schema_version": "2.0.0",
       "slash_commands": [
         {
           "command": "/api-docs",
@@ -1276,19 +1284,38 @@
           "icon": "🧭"
         }
       ],
-      "desk_preference": {
-        "desk_id": "desk-tech-writer",
-        "zone": "Creative Hub"
-      },
-      "pinned_model": {
-        "enforce_lock": false,
-        "model_id": "gemini-3.8-flash-high",
-        "provider": "google"
-      },
-      "pinned_account": {
-        "account_id": "combo",
-        "pool_strategy": "combo"
-      }
+      "source_path": "agents/tech-writer",
+      "version": "1.0.14"
+    },
+    {
+      "$schema": "https://floworkos.com/schemas/agent.v2.json",
+      "allowed_tools": [
+        "*"
+      ],
+      "author": "anonymous",
+      "category": "technology",
+      "category_id": "CAT-005",
+      "created_at": "2026-10-14 16:22:11",
+      "default_tools": [
+        "run_command",
+        "view_file",
+        "write_to_file",
+        "replace_file_content",
+        "ask_question",
+        "search_web",
+        "read_url_content"
+      ],
+      "description": "Test sentinel agent for lifecycle verification",
+      "id": "test-sentinel",
+      "name": "Sentinel Test Bot",
+      "owner": "anonymous",
+      "schema_version": "2.0.0",
+      "source_path": "agents/test-sentinel",
+      "version": "1.0.0"
     }
-  ]
+  ],
+  "description": "Official Flowork OS Sovereign Agent Registry (Modern 4-Layer Zero-Bloat Architecture v3.0.0)",
+  "repo": "flowork-os/AGENTS",
+  "updated_at": "2026-10-14 16:22:17",
+  "version": "2.0.0"
 }
