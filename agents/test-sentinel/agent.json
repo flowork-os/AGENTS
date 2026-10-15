@@ -6,7 +6,7 @@
   "author": "anonymous",
   "category": "technology",
   "category_id": "CAT-005",
-  "created_at": "2026-10-15 07:42:50",
+  "created_at": "2026-10-15 07:43:13",
   "default_tools": [
     "run_command",
     "view_file",
