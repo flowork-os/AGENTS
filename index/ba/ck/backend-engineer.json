@@ -1,0 +1,11 @@
+{
+  "id": "backend-engineer",
+  "name": "Backend Engineer",
+  "role": "Autonomous Backend Engineer",
+  "version": "1.0.0",
+  "author": "Awenk Audico & Flowork OS",
+  "department": "engineering",
+  "description": "Autonomous specialist backend-engineer.",
+  "shard": "index/ba/ck/backend-engineer.json",
+  "source_path": "agents/ba/backend-engineer"
+}

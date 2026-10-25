@@ -1,0 +1,8 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "id": "quality-control",
+  "name": "Quality Control",
+  "role": "Autonomous Quality Control",
+  "department": "engineering",
+  "version": "1.0.0"
+}

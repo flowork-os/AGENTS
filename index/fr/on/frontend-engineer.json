@@ -1,0 +1,11 @@
+{
+  "id": "frontend-engineer",
+  "name": "Frontend Engineer",
+  "role": "Autonomous Frontend Engineer",
+  "version": "1.0.0",
+  "author": "Awenk Audico & Flowork OS",
+  "department": "engineering",
+  "description": "Autonomous specialist frontend-engineer.",
+  "shard": "index/fr/on/frontend-engineer.json",
+  "source_path": "agents/fr/frontend-engineer"
+}

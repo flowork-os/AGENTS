@@ -1,0 +1,8 @@
+{
+  "$schema": "https://floworkos.com/schemas/agent.v2.json",
+  "id": "backend-engineer",
+  "name": "Backend Engineer",
+  "role": "Autonomous Backend Engineer",
+  "department": "engineering",
+  "version": "1.0.0"
+}

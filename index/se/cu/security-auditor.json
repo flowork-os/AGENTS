@@ -1,0 +1,11 @@
+{
+  "id": "security-auditor",
+  "name": "Security Auditor",
+  "role": "Security & Reverse Engineering Specialist",
+  "version": "1.0.0",
+  "author": "Awenk Audico",
+  "department": "security",
+  "description": "Specialist in AST code auditing, reverse engineering inspection, threat modeling, dependency CVE checks, and secret leakage prevention. Strictly locked to read-only inspection and testing; cannot modify implementation code.",
+  "shard": "index/se/cu/security-auditor.json",
+  "source_path": "agents/se/security-auditor"
+}

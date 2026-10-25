@@ -1,0 +1,11 @@
+{
+  "id": "quality-control",
+  "name": "Quality Control",
+  "role": "Autonomous Quality Control",
+  "version": "1.0.0",
+  "author": "Awenk Audico & Flowork OS",
+  "department": "engineering",
+  "description": "Autonomous specialist quality-control.",
+  "shard": "index/qu/al/quality-control.json",
+  "source_path": "agents/qu/quality-control"
+}
